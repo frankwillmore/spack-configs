@@ -4,24 +4,25 @@ spack:
   config::
     concretizer:: original
     install_tree:
-      root: /lfs/software/opt
+#      root: /lfs/software/opt
       root: /home/frank/software/opt
       padded_length: 128
     build_stage: $tempdir/user/spack-stage
 
-#  modules::
-#    default:
-##      module_roots:
-##        tcl: /cm/shared/software/modules
+  modules::
+    default:
+#      module_roots:
+#        tcl: /cm/shared/software/modules
 #      tcl:
-#        blacklist_implicits: true
-#        hash_length: 0
-#        all:
-#          conflict:
-#          - '{name}'
-#          environment:
-#            set:
-#              '{name}_ROOT': '{prefix}'
+      lmod:
+        blacklist_implicits: true
+        hash_length: 0
+        all:
+          conflict:
+          - '{name}'
+          environment:
+            set:
+              '{name}_ROOT': '{prefix}'
 #        projections:
 #          all: '{name}/{version}-{compiler.name}-{compiler.version}'
 
