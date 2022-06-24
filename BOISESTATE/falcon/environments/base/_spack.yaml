@@ -1,12 +1,14 @@
 spack:
   include:
   - system_packages.yaml
+  - system_packages2.yaml
   view: false
   'config:':
     concretizer: clingo
     install_tree:
-      root: /lfs/software/opt
-      padded_length: 0
+#      root: /lfs/software/opt
+      root: /software/opt
+      padded_length: 128
     build_stage: $tempdir/user/spack-stage
   'compilers:':
   - compiler:
@@ -21,7 +23,20 @@ spack:
       environment: {}
       extra_rpaths: []
       flags: {}
-      spec: oneapi@2022.1.0
+      spec: oneapi@2021.4.0
+  - compiler:
+      paths:
+        cc: /lfs/software/opt/linux-rocky8-x86_64/gcc-8.5.0/intel-oneapi-compilers-2021.4.0-j6dai6emcj3m6t2fhurodakwrtt3q3qb/compiler/2021.4.0/linux/bin/intel64/icc
+        cxx: /lfs/software/opt/linux-rocky8-x86_64/gcc-8.5.0/intel-oneapi-compilers-2021.4.0-j6dai6emcj3m6t2fhurodakwrtt3q3qb/compiler/2021.4.0/linux/bin/intel64/icpc
+        f77: /lfs/software/opt/linux-rocky8-x86_64/gcc-8.5.0/intel-oneapi-compilers-2021.4.0-j6dai6emcj3m6t2fhurodakwrtt3q3qb/compiler/2021.4.0/linux/bin/intel64/ifort
+        fc: /lfs/software/opt/linux-rocky8-x86_64/gcc-8.5.0/intel-oneapi-compilers-2021.4.0-j6dai6emcj3m6t2fhurodakwrtt3q3qb/compiler/2021.4.0/linux/bin/intel64/ifort
+      operating_system: rocky8
+      target: x86_64
+      modules: []
+      environment: {}
+      extra_rpaths: []
+      flags: {}
+      spec: intel@2021.4.0
   - compiler:
       paths:
         cc: /lfs/software/opt/linux-rocky8-x86_64/gcc-8.5.0/gcc-12.1.0-b2zrdgxtipaiqaadgk224vt2ad2laklo/bin/gcc
@@ -48,7 +63,34 @@ spack:
       extra_rpaths: []
       flags: {}
       spec: gcc@8.5.0
+
   packages:
+
+    gcc:
+      version: 
+      - 12.1.0
+      externals:
+      - spec: gcc@12.1.0
+        prefix: /lfs/software/opt/linux-rocky8-x86_64/gcc-8.5.0/gcc-12.1.0-b2zrdgxtipaiqaadgk224vt2ad2laklo
+        buildable: false
+
+    # Should I just call it intel-oneapi-compilers?
+    intel-oneapi-compilers:
+      version: 
+      - 2021.4.0
+      externals:
+      - spec: intel-oneapi-compilers@2021.4.0 
+        prefix: /lfs/software/opt/linux-rocky8-x86_64/gcc-8.5.0/intel-oneapi-compilers-2021.4.0-j6dai6emcj3m6t2fhurodakwrtt3q3qb
+        buildable: false
+
+    cmake:
+      version: 
+      - 3.23.1
+      externals:
+      - spec: cmake@3.23.1
+        prefix: /usr
+        buildable: false
+
     slurm:
       version:
       - 21.08.8-2
@@ -56,20 +98,62 @@ spack:
       - spec: slurm@21.08.8-2
         prefix: /usr
         buildable: false
+
     mpich:
       variants: +slurm
       version:
       - 3.4.3
+
     openmpi:
       version:
       - 4.1.3
+
   specs:
-  - gcc@12.1.0%gcc@12.1.0 target=x86_64
-  - intel-oneapi-compilers@2021.4.0%gcc@12.1.0 arch=linux-rocky8-x86_64
+#  - gcc@12.1.0%gcc@12.1.0 target=x86_64
+  - gcc@12.1.0%gcc@8.5.0 target=x86_64
+#  - intel-oneapi-compilers@2021.4.0%gcc@12.1.0 target=x86_64
+  - intel-oneapi-compilers@2021.4.0%gcc@8.5.0 target=x86_64
   - matrix:
     - - mpich@3.4.3
       - openmpi@4.1.3 +legacylaunchers fabrics=ucx schedulers=slurm
     - - '%gcc@12.1.0'
+      - '%intel@2021.4.0'
+      # - '%oneapi@2021.4.0'
     - - target=x86_64
+  - matrix:
+    - - hdf5
+    - - ^mpich
+      - ^openmpi
+    - - '%gcc'
+      - '%intel'
+#      - '%oneapi'
+    - - target=x86_64
+# Note that the concretizer tries to use the intel mpich when it builds with oneapi, but the mpich wrappers point to the intel compilers
+#    exclude: 
+#    - '%oneapi ^openmpi'
   concretizer:
     unify: false
+
+  modules::
+    default:
+      roots:
+        lmod: ~/lmod
+      enable:
+      - lmod
+      lmod:
+        hash_length: 0
+        whitelist:
+        - gcc
+        - intel
+        - oneapi
+#        blacklist:
+#        - gcc@8.5.0
+        blacklist_implicits: true
+        core_compilers:
+        - gcc@8.5.0
+        # Core specs appear in the TLD and are built with the core compiler
+        core_specs:
+        - gcc@12.1.0
+        - intel-oneapi-compilers@2021.4.0
+        hierarchy:
+        - mpi

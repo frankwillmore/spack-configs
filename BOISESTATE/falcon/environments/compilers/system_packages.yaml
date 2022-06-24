@@ -1,4 +1,3 @@
-packages:
   berkeley-db:
     version:
     - 18.1.40
@@ -90,10 +89,3 @@ packages:
     - spec: perl@5.34.0
       prefix: /lfs/software/opt/linux-rocky8-x86_64/gcc-8.5.0/perl-5.34.0-yljtzguf4lkxna6pgojiclkxgvzpht2v
       buildable: False
-  pkgconf:
-    version: 
-    - 1.8.0
-    externals: 
-    - spec: pkgconf@1.8.0
-      prefix: /lfs/software/opt/linux-rocky8-x86_64/gcc-8.5.0/pkgconf-1.8.0-scpjfhqaazdbk7dk2z6tq4sfns7fxlyr
-      buildable: false
