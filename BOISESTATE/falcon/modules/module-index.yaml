@@ -1,0 +1,70 @@
+module_index:
+  njy7jvav7quf5vzzmqamafqefnpwfphq:
+    path: /lfs/software/modules/linux-rocky8-x86_64/gcc/12.1.0/mpich/3.4.3.lua
+    use_name: mpich/3.4.3
+  uzw3ca7d6iisjr3nolk2amjlw673p6gg:
+    path: /lfs/software/modules/linux-rocky8-x86_64/intel/2021.4.0/mpich/3.4.3.lua
+    use_name: mpich/3.4.3
+  dqms23oihsgrzqwnqxc3dbaz7ylovw6u:
+    path: /lfs/software/modules/linux-rocky8-x86_64/mpich/3.4.3-cnztotg/gcc/12.1.0/lammps/20220107.lua
+    use_name: lammps/20220107
+  ie4ghganuaamd6blsywyn5z5cdlgbira:
+    path: /lfs/software/modules/linux-rocky8-x86_64/openmpi/4.1.3-lrjefza/gcc/12.1.0/lammps/20220107.lua
+    use_name: lammps/20220107
+  cxsylhbk4pgdgldz6hx4lbymcydiggt6:
+    path: /lfs/software/modules/linux-rocky8-x86_64/mpich/3.4.3-avaejfc/intel/2021.4.0/lammps/20220107.lua
+    use_name: lammps/20220107
+  2qk2z6mjh5zc3wwsr3bdktoju4ypa4dd:
+    path: /lfs/software/modules/linux-rocky8-x86_64/openmpi/4.1.3-2zyxnsg/intel/2021.4.0/lammps/20220107.lua
+    use_name: lammps/20220107
+  e7j3xrg5imwffjidgcvt3nzdrleaqq6d:
+    path: /lfs/software/modules/linux-rocky8-x86_64/mpich/3.4.3-ofbfmxc/gcc/12.1.0/hdf5/1.12.2.lua
+    use_name: hdf5/1.12.2
+  fyltbevpxnf46erntix5ue25dnhkbrne:
+    path: /lfs/software/modules/linux-rocky8-x86_64/openmpi/4.1.3-lrjefza/gcc/12.1.0/hdf5/1.12.2.lua
+    use_name: hdf5/1.12.2
+  qmqmxs7dn6wya4kodkhvkqncfbqnckj5:
+    path: /lfs/software/modules/linux-rocky8-x86_64/mpich/3.4.3-pwl7ps4/intel/2021.4.0/hdf5/1.12.2.lua
+    use_name: hdf5/1.12.2
+  3zzaxzwvzseggmh76yvent663ho6btdl:
+    path: /lfs/software/modules/linux-rocky8-x86_64/openmpi/4.1.3-2zyxnsg/intel/2021.4.0/hdf5/1.12.2.lua
+    use_name: hdf5/1.12.2
+  p2tm3dk2rzfxa2gau2vfjvvnocrsyteu:
+    path: /lfs/software/modules/mpich/3.4.3-drnz4hr/gcc/12.1.0/lammps/20220107.lua
+    use_name: lammps/20220107
+  bgozvjopzzwjnxl5vm7xosdrgjdbz6hm:
+    path: /lfs/software/modules/openmpi/4.1.3-mdmkydw/gcc/12.1.0/lammps/20220107.lua
+    use_name: lammps/20220107
+  4vujloac4cdz2w652oqp2plnongcqwbd:
+    path: /lfs/software/modules/mpich/3.4.3-gggfega/intel/2021.4.0/lammps/20220107.lua
+    use_name: lammps/20220107
+  6jdndqs6i73upvwd2vofjtgx2lmd4zbj:
+    path: /lfs/software/modules/openmpi/4.1.3-dey3qde/intel/2021.4.0/lammps/20220107.lua
+    use_name: lammps/20220107
+  ovj2a4djcjenusbo2hishdzjkf7gzp23:
+    path: /lfs/software/modules/mpich/3.4.3-drnz4hr/gcc/12.1.0/openfoam/2112.lua
+    use_name: openfoam/2112
+  eizbmzty4c5eh2fq62tlwdecz6bkgz56:
+    path: /lfs/software/modules/openmpi/4.1.3-mdmkydw/gcc/12.1.0/openfoam/2112.lua
+    use_name: openfoam/2112
+  i7lhvjjokukgmunxlzgpwr7yskxtrewz:
+    path: /lfs/software/modules/openmpi/4.1.3-dey3qde/intel/2021.4.0/openfoam/2112.lua
+    use_name: openfoam/2112
+  rxqwytkeu5wsbcplxify5b7uupxt5osa:
+    path: /lfs/software/modules/mpich/3.4.3-gggfega/intel/2021.4.0/openfoam/2112.lua
+    use_name: openfoam/2112
+  dkyrcmdz45eqdp4adbqpczppve663bzn:
+    path: /lfs/software/modules/gcc/12.1.0/tar/1.34.lua
+    use_name: tar/1.34
+  lelsy7kja5rfpoanv4nextogj5guiylo:
+    path: /lfs/software/modules/gcc/12.1.0/mpich/3.4.3-drnz4hr/fftw/3.3.10.lua
+    use_name: fftw/3.3.10
+  y6hsua3kp7x4sffnq4nf46k2eqljqlqu:
+    path: /lfs/software/modules/gcc/12.1.0/openmpi/4.1.3-mdmkydw/fftw/3.3.10.lua
+    use_name: fftw/3.3.10
+  gj3bgfmamrufyjyt25kfak3nbf3bork6:
+    path: /lfs/software/modules/intel/2021.4.0/mpich/3.4.3-gggfega/fftw/3.3.10.lua
+    use_name: fftw/3.3.10
+  3ghg5vrq7axfixn26q74wgrrrfqs6omi:
+    path: /lfs/software/modules/intel/2021.4.0/openmpi/4.1.3-dey3qde/fftw/3.3.10.lua
+    use_name: fftw/3.3.10
