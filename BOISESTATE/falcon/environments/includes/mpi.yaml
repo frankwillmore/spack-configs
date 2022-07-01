@@ -1,0 +1,25 @@
+packages:
+
+  mpich:
+    variants: +slurm
+    version:
+    - 3.4.3
+    externals:
+    - spec: mpich@3.4.3%gcc
+      prefix: /lfs/software/opt/linux-rocky8-x86_64/gcc-12.1.0/mpich-3.4.3-njy7jvav7quf5vzzmqamafqefnpwfphq
+      buildable: false
+    - spec: mpich@3.4.3%intel
+      prefix: /lfs/software/opt/linux-rocky8-x86_64/intel-2021.4.0/mpich-3.4.3-uzw3ca7d6iisjr3nolk2amjlw673p6gg
+      buildable: false
+
+  openmpi:
+    version:
+    - 4.1.3
+    externals:
+    - spec: openmpi@4.1.3%gcc
+      prefix: /lfs/software/opt/linux-rocky8-x86_64/gcc-12.1.0/openmpi-4.1.3-d5vdlovcq4fpd6mxzxf4ypveikxclapu
+      buildable: false
+    - spec: openmpi@4.1.3%intel
+      prefix: /lfs/software/opt/linux-rocky8-x86_64/intel-2021.4.0/openmpi-4.1.3-x2ww2l3tev6e5acwnqabzpemomvruqmq
+      buildable: false
+
