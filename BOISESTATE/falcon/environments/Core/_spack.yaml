@@ -1,0 +1,53 @@
+spack:
+
+  include:
+  - ../../includes/system_packages.yaml
+
+  view: false
+  'config:':
+    concretizer: clingo
+    install_tree:
+# These for install
+      root: /lfs/software/opt
+      padded_length: 0
+# These for build, because of lustre
+#      root: /software/opt
+#      padded_length: 128
+    build_stage: $tempdir/user/spack-stage
+
+#  packages:
+
+  specs:
+
+  - matrix:
+    - - cmake
+      - tmux
+    - - '%gcc@8.5.0'
+    - - target=x86_64
+
+  concretizer:
+    unify: false
+
+  modules::
+    default:
+      roots:
+        lmod: /lfs/software/modules
+      enable:
+      - lmod
+      lmod:
+        hash_length: 0
+#        whitelist:
+#        - gcc
+#        - intel
+#        - oneapi
+        blacklist_implicits: true
+        core_compilers:
+        - gcc@8.5.0
+        # Core specs appear in the TLD and are built with the core compiler
+        core_specs:
+        - cmake 
+        - tmux
+    arch_folder: false
+
+  mirrors:
+    falcon-mirror: file:///lfs/software/falcon-mirror
