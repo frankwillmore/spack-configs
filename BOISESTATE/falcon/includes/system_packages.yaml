@@ -366,3 +366,20 @@ packages:
       prefix: /lfs/software/opt/linux-rocky8-x86_64/gcc-12.1.0/zlib-1.2.12-wns3bvnkwl2hpqbvzssfvwbzo6uveeic
       buildable: False
 
+  m4:
+    version:
+    - 1.4.19
+    externals:
+    - spec: m4@1.4.19
+      prefix: /lfs/software/opt/linux-rocky8-x86_64/gcc-8.5.0/m4-1.4.19-473jfaakulfrbezdq4vvqic2l4y4j5f3
+      buildable: False
+
+  libsigsegv:
+    version:
+    - 2.13
+    externals:
+    - spec: libsigsegv@2.13
+      prefix: /usr
+#      prefix: /lfs/software/opt/linux-rocky8-x86_64/gcc-8.5.0/libsigsegv-2.13-jgfqg6ub4azglozpv2rrc72v22qlpa2k
+      buildable: False
+

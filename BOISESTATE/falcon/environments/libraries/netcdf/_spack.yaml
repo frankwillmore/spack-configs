@@ -4,6 +4,7 @@ spack:
   - ../../../includes/system_packages.yaml
   - ../../../includes/mpi.yaml
   - ../../../includes/compilers.yaml
+  - ../../../includes/hdf5.yaml
 
   view: false
   'config:':
@@ -15,32 +16,31 @@ spack:
 #      padded_length: 128
     build_stage: $tempdir/user/spack-stage
 
-  packages:
+  definitions:
 
-    cmake:
-      version: 
-      - 3.23.1
-      externals:
-      - spec: cmake@3.23.1
-        prefix: /usr
-        buildable: false
+  - libraries:
+    - netcdf-c
+    - netcdf-fortran
+    - parallel-netcdf
 
-    slurm:
-      version:
-      - 21.08.8-2
-      externals:
-      - spec: slurm@21.08.8-2
-        prefix: /usr
-        buildable: false
+  - compilers:
+    - '%gcc@12.1.0'
+    - '%intel@2021.4.0'
+
+  - mpis:
+    - '^mpich@3.4.3'
+    - '^openmpi@4.1.3'
+
+  - targets:
+    - target=x86_64
 
   specs:
   - matrix:
-    - - gromacs@2022.2
-    - - ^mpich
-      - ^openmpi
-    - - '%gcc'
-#      - '%intel'
-    - - target=broadwell
+    - [ $libraries ]
+    - [ $compilers ]
+    - [ $mpis ]
+    - [ $targets ]
+
   concretizer:
     unify: false
 
@@ -48,17 +48,23 @@ spack:
     default:
       roots:
         lmod: /lfs/software/modules
-        tcl: /tmp
-      arch_folder: false
       enable:
       - lmod
-      - tcl
       lmod:
         hash_length: 0
-        whitelist:
-        - gcc
-        - intel
+#        whitelist:
+#        - gcc
+#        - intel
+#        - oneapi
+#        blacklist:
+#        - gcc@8.5.0
         blacklist_implicits: true
+        core_compilers:
+        - gcc@8.5.0
+        # Core specs appear in the TLD and are built with the core compiler
+        core_specs:
+        - gcc@12.1.0
+        - intel-oneapi-compilers@2021.4.0
         hierarchy:
         - mpi
 

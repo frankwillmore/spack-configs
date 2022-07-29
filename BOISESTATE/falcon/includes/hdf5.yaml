@@ -1,0 +1,15 @@
+packages:
+  hdf5:
+    version: 
+    - 1.12.2
+    externals:
+    - spec: "hdf5@1.12.2+cxx+fortran+hl~ipo+java+mpi+shared~szip~threadsafe+tools%gcc^mpich"
+      prefix: /lfs/software/opt/linux-rocky8-x86_64/gcc-12.1.0/hdf5-1.12.2-e7j3xrg5imwffjidgcvt3nzdrleaqq6d
+    - spec: "hdf5@1.12.2+cxx+fortran+hl~ipo+java+mpi+shared~szip~threadsafe+tools%gcc^openmpi"
+      prefix: /lfs/software/opt/linux-rocky8-x86_64/gcc-12.1.0/hdf5-1.12.2-fyltbevpxnf46erntix5ue25dnhkbrne
+    - spec: "hdf5@1.12.2+cxx+fortran+hl~ipo+java+mpi+shared~szip~threadsafe+tools%intel^mpich"
+      prefix: /lfs/software/opt/linux-rocky8-x86_64/intel-2021.4.0/hdf5-1.12.2-qmqmxs7dn6wya4kodkhvkqncfbqnckj5
+    - spec: "hdf5@1.12.2+cxx+fortran+hl~ipo+java+mpi+shared~szip~threadsafe+tools%intel^openmpi"
+      prefix: /lfs/software/opt/linux-rocky8-x86_64/intel-2021.4.0/hdf5-1.12.2-3zzaxzwvzseggmh76yvent663ho6btdl
+    buildable: False
+
