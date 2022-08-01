@@ -277,7 +277,8 @@ packages:
     - 1.1.1o
     externals:
     - spec: openssl@1.1.1o
-      prefix: /lfs/software/opt/linux-rocky8-x86_64/gcc-12.1.0/openssl-1.1.1o-gdxqipp7govoa6tfk7kvqlht3qj3d3j6
+      prefix: /usr
+#      prefix: /lfs/software/opt/linux-rocky8-x86_64/gcc-12.1.0/openssl-1.1.1o-gdxqipp7govoa6tfk7kvqlht3qj3d3j6
       buildable: False
 
   pcre:
@@ -372,6 +373,14 @@ packages:
     externals:
     - spec: m4@1.4.19
       prefix: /lfs/software/opt/linux-rocky8-x86_64/gcc-8.5.0/m4-1.4.19-473jfaakulfrbezdq4vvqic2l4y4j5f3
+      buildable: False
+
+  libtool:
+    version:
+    - 2.4.7
+    externals:
+    - spec: libtool@2.4.7
+      prefix: /usr
       buildable: False
 
   libsigsegv:

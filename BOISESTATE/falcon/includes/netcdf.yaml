@@ -6,31 +6,13 @@ packages:
     externals:
     - spec: netcdf-c@4.8.1%gcc@12.1.0^mpich 
       prefix: /lfs/software/opt/linux-rocky8-x86_64/gcc-12.1.0/netcdf-c-4.8.1-lqx2auaoeuizzllnln6bmime4o3mnajk
-      buildable: False
-
-  netcdf-c:
-    version:
-    - 4.8.1
-    externals:
     - spec: netcdf-c@4.8.1%gcc@12.1.0^openmpi 
       prefix: /lfs/software/opt/linux-rocky8-x86_64/gcc-12.1.0/netcdf-c-4.8.1-vz2pr7bwtd4jda64xnban23rjyyxwdle
-      buildable: False
-
-  netcdf-c:
-    version:
-    - 4.8.1
-    externals:
     - spec: netcdf-c@4.8.1%intel@2021.4.0^mpich 
       prefix: /lfs/software/opt/linux-rocky8-x86_64/intel-2021.4.0/netcdf-c-4.8.1-77tvoxowxhud47wyldvn6wpzkf2v57hw
-      buildable: False
-
-  netcdf-c:
-    version:
-    - 4.8.1
-    externals:
     - spec: netcdf-c@4.8.1%intel@2021.4.0^openmpi 
       prefix: /lfs/software/opt/linux-rocky8-x86_64/intel-2021.4.0/netcdf-c-4.8.1-ftkaayn4amwvqznnkqjzg5fphjn2cf7r
-      buildable: False
+    buildable: False
 
   netcdf-fortran:
     version:
@@ -38,31 +20,13 @@ packages:
     externals:
     - spec: netcdf-fortran@4.5.4%gcc@12.1.0^mpich 
       prefix: /lfs/software/opt/linux-rocky8-x86_64/gcc-12.1.0/netcdf-fortran-4.5.4-jqzbd2vzvmb2kanw6mpl3q4ydmroa7yk
-      buildable: False
-
-  netcdf-fortran:
-    version:
-    - 4.5.4
-    externals:
     - spec: netcdf-fortran@4.5.4%gcc@12.1.0^openmpi 
       prefix: /lfs/software/opt/linux-rocky8-x86_64/gcc-12.1.0/netcdf-fortran-4.5.4-zz7ahd25cem5aa2dawcs23zenjt3v3wc
-      buildable: False
-
-  netcdf-fortran:
-    version:
-    - 4.5.4
-    externals:
     - spec: netcdf-fortran@4.5.4%intel@2021.4.0^mpich 
       prefix: /lfs/software/opt/linux-rocky8-x86_64/intel-2021.4.0/netcdf-fortran-4.5.4-yke7jalztqc2txyvbswovjinoomodmjf
-      buildable: False
-
-  netcdf-fortran:
-    version:
-    - 4.5.4
-    externals:
     - spec: netcdf-fortran@4.5.4%intel@2021.4.0^openmpi 
       prefix: /lfs/software/opt/linux-rocky8-x86_64/intel-2021.4.0/netcdf-fortran-4.5.4-pamh23wjpvfd42hueu7z5rxlw7yet7av
-      buildable: False
+    buildable: False
 
   parallel-netcdf:
     version:
@@ -70,29 +34,11 @@ packages:
     externals:
     - spec: parallel-netcdf@1.12.2%gcc@12.1.0^mpich 
       prefix: /lfs/software/opt/linux-rocky8-x86_64/gcc-12.1.0/parallel-netcdf-1.12.2-3gbqnk6xbf53zmmyyixlv6j7a5c2p46w
-      buildable: False
-
-  parallel-netcdf:
-    version:
-    - 1.12.2
-    externals:
     - spec: parallel-netcdf@1.12.2%gcc@12.1.0^openmpi 
       prefix: /lfs/software/opt/linux-rocky8-x86_64/gcc-12.1.0/parallel-netcdf-1.12.2-krxmvxqfmkcrmpxjotf27kdf7jwbah2k
-      buildable: False
-
-  parallel-netcdf:
-    version:
-    - 1.12.2
-    externals:
     - spec: parallel-netcdf@1.12.2%intel@2021.4.0^mpich 
       prefix: /lfs/software/opt/linux-rocky8-x86_64/intel-2021.4.0/parallel-netcdf-1.12.2-oy7ygs6g7jomtb3lpatossswvix4mhok
-      buildable: False
-
-  parallel-netcdf:
-    version:
-    - 1.12.2
-    externals:
     - spec: parallel-netcdf@1.12.2%intel@2021.4.0^openmpi 
       prefix: /lfs/software/opt/linux-rocky8-x86_64/intel-2021.4.0/parallel-netcdf-1.12.2-6trzgvakoxlxuaok42v243rcbvkq5mxe
-      buildable: False
+    buildable: False
 
