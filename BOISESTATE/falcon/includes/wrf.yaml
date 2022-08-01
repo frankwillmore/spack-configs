@@ -1,0 +1,16 @@
+packages:
+
+  wrf:
+    version:
+    - 4.3.3
+    externals:
+    - spec: wrf@4.3.3%gcc@12.1.0^mpich 
+      prefix: /lfs/software/opt/linux-rocky8-broadwell/gcc-12.1.0/wrf-4.3.3-sd37muvy4ghe7zs6biezxokkozbz66me
+    - spec: wrf@4.3.3%gcc@12.1.0^openmpi 
+      prefix: /lfs/software/opt/linux-rocky8-broadwell/gcc-12.1.0/wrf-4.3.3-j46kfwqhotkaofwfo22wvutiwdvtpg2a
+    - spec: wrf@4.3.3%intel@2021.4.0^mpich 
+      prefix: /lfs/software/opt/linux-rocky8-broadwell/intel-2021.4.0/wrf-4.3.3-pbtzkb37rk2pimqetvr4p5bf3zy47myg
+    - spec: wrf@4.3.3%intel@2021.4.0^openmpi 
+      prefix: /lfs/software/opt/linux-rocky8-broadwell/intel-2021.4.0/wrf-4.3.3-hayhylqjltomkrhsknzdzxvx3hrimyll
+    buildable: False
+
