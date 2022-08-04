@@ -118,6 +118,7 @@ spack:
 
   modules::
     default:
+      arch_folder: false
       roots:
         lmod: /lfs/software/modules
       enable:
