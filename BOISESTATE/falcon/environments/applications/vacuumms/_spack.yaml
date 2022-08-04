@@ -1,9 +1,8 @@
 spack:
 
   include:
-  - ../../includes/system_packages.yaml
-  - ../../includes/mpi.yaml
-  - ../../includes/compilers.yaml
+  - ../../../includes/system_packages.yaml
+  - ../../../includes/compilers.yaml
 
   view: false
   'config:':
