@@ -1,0 +1,15 @@
+packages:
+  fftw:
+    version: 
+    - 3.3.10
+    externals:
+    - spec: "fftw@3.3.10%gcc^mpich"
+      prefix: /lfs/software/opt/linux-rocky8-broadwell/gcc-12.1.0/fftw-3.3.10-lelsy7kja5rfpoanv4nextogj5guiylo
+    - spec: "fftw@3.3.10%gcc^openmpi"
+      prefix: /lfs/software/opt/linux-rocky8-broadwell/gcc-12.1.0/fftw-3.3.10-y6hsua3kp7x4sffnq4nf46k2eqljqlqu
+    - spec: "fftw@3.3.10%intel^mpich"
+      prefix: /lfs/software/opt/linux-rocky8-broadwell/intel-2021.4.0/fftw-3.3.10-gj3bgfmamrufyjyt25kfak3nbf3bork6
+    - spec: "fftw@3.3.10%intel^openmpi"
+      prefix: /lfs/software/opt/linux-rocky8-broadwell/intel-2021.4.0/fftw-3.3.10-3ghg5vrq7axfixn26q74wgrrrfqs6omi
+    buildable: False
+
