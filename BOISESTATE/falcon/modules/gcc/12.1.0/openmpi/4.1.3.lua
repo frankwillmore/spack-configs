@@ -38,3 +38,6 @@ setenv("MPICXX", "/lfs/software/opt/linux-rocky8-x86_64/gcc-12.1.0/openmpi-4.1.3
 setenv("MPIF77", "/lfs/software/opt/linux-rocky8-x86_64/gcc-12.1.0/openmpi-4.1.3-d5vdlovcq4fpd6mxzxf4ypveikxclapu/bin/mpif77")
 setenv("MPIF90", "/lfs/software/opt/linux-rocky8-x86_64/gcc-12.1.0/openmpi-4.1.3-d5vdlovcq4fpd6mxzxf4ypveikxclapu/bin/mpif90")
 
+prepend_path("PATH", "/lfs/software/opt/linux-rocky8-x86_64/gcc-12.1.0/openmpi-4.1.3-d5vdlovcq4fpd6mxzxf4ypveikxclapu/bin")
+
+setenv("PMIX_MCA_pcompress_base_silence_warning", "1")

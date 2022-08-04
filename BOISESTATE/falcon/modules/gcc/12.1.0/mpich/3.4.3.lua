@@ -19,6 +19,8 @@ family("mpi")
 -- Loading this module unlocks the path below unconditionally
 prepend_path("MODULEPATH", "/lfs/software/modules/mpich/3.4.3/gcc/12.1.0")
 
+prepend_path("PATH", "/lfs/software/opt/linux-rocky8-x86_64/gcc-12.1.0/mpich-3.4.3-njy7jvav7quf5vzzmqamafqefnpwfphq/bin")
+
 -- Try to load variables into path to see if providers are there
 
 -- Change MODULEPATH based on the result of the tests above

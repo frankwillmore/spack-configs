@@ -33,3 +33,4 @@ setenv("MPICXX", "/lfs/software/opt/linux-rocky8-x86_64/intel-2021.4.0/mpich-3.4
 setenv("MPIF77", "/lfs/software/opt/linux-rocky8-x86_64/intel-2021.4.0/mpich-3.4.3-uzw3ca7d6iisjr3nolk2amjlw673p6gg/bin/mpif77")
 setenv("MPIF90", "/lfs/software/opt/linux-rocky8-x86_64/intel-2021.4.0/mpich-3.4.3-uzw3ca7d6iisjr3nolk2amjlw673p6gg/bin/mpif90")
 
+prepend_path("PATH", "/lfs/software/opt/linux-rocky8-x86_64/intel-2021.4.0/mpich-3.4.3-uzw3ca7d6iisjr3nolk2amjlw673p6gg/bin")

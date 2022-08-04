@@ -40,3 +40,7 @@ setenv("MPICXX", "/lfs/software/opt/linux-rocky8-x86_64/intel-2021.4.0/openmpi-4
 setenv("MPIF77", "/lfs/software/opt/linux-rocky8-x86_64/intel-2021.4.0/openmpi-4.1.3-x2ww2l3tev6e5acwnqabzpemomvruqmq/bin/mpif77")
 setenv("MPIF90", "/lfs/software/opt/linux-rocky8-x86_64/intel-2021.4.0/openmpi-4.1.3-x2ww2l3tev6e5acwnqabzpemomvruqmq/bin/mpif90")
 
+prepend_path("PATH", "/lfs/software/opt/linux-rocky8-x86_64/intel-2021.4.0/openmpi-4.1.3-x2ww2l3tev6e5acwnqabzpemomvruqmq/bin")
+
+setenv("PMIX_MCA_pcompress_base_silence_warning", "1")
+
