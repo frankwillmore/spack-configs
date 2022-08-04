@@ -1,0 +1,2161 @@
+{
+  "_meta": {
+    "file-type": "spack-lockfile",
+    "lockfile-version": 4,
+    "specfile-version": 3
+  },
+  "roots": [
+    {
+      "hash": "eenxk2lcjox6uwfoojiqbvf3cksrfm75",
+      "spec": "wps@4.3.1%gcc arch=linux-None-broadwell ^mpich"
+    },
+    {
+      "hash": "ze5x36ftlf3y5knxuwqg36mehfov7iwx",
+      "spec": "wps@4.3.1%intel arch=linux-None-broadwell ^mpich"
+    },
+    {
+      "hash": "ywhijwakb4xtl76x53xw3l754mfmc6fz",
+      "spec": "wps@4.3.1%gcc arch=linux-None-broadwell ^openmpi"
+    },
+    {
+      "hash": "4bv6ixscfpe7igmql4j2hrem5qnqwhee",
+      "spec": "wps@4.3.1%intel arch=linux-None-broadwell ^openmpi"
+    }
+  ],
+  "concrete_specs": {
+    "eenxk2lcjox6uwfoojiqbvf3cksrfm75": {
+      "name": "wps",
+      "version": "4.3.1",
+      "arch": {
+        "platform": "linux",
+        "platform_os": "rocky8",
+        "target": {
+          "name": "broadwell",
+          "vendor": "GenuineIntel",
+          "features": [
+            "adx",
+            "aes",
+            "avx",
+            "avx2",
+            "bmi1",
+            "bmi2",
+            "f16c",
+            "fma",
+            "mmx",
+            "movbe",
+            "pclmulqdq",
+            "popcnt",
+            "rdrand",
+            "rdseed",
+            "sse",
+            "sse2",
+            "sse4_1",
+            "sse4_2",
+            "ssse3"
+          ],
+          "generation": 0,
+          "parents": [
+            "haswell"
+          ]
+        }
+      },
+      "compiler": {
+        "name": "gcc",
+        "version": "12.1.0"
+      },
+      "namespace": "builtin",
+      "parameters": {
+        "build_type": "serial",
+        "patches": [
+          "3f0d9999f2ab438b4625f46c95b84998167ca8652f692b09f8fc427324f166e5",
+          "62c1bcc48dca8b48f2b766bf08a4f787452e3431b03d49efd34ca62338c2d190",
+          "e208f471eb7d66db130dbfe1d97d76fdef129a8f3189c17f3c93266dea0a80a5",
+          "e86d02971a36bfb79d39f5b25af246e3ca6c9990c4ee4175b558889621cb7af1"
+        ],
+        "cflags": [],
+        "cppflags": [],
+        "cxxflags": [],
+        "fflags": [],
+        "ldflags": [],
+        "ldlibs": []
+      },
+      "patches": [
+        "62c1bcc48dca8b48f2b766bf08a4f787452e3431b03d49efd34ca62338c2d190",
+        "3f0d9999f2ab438b4625f46c95b84998167ca8652f692b09f8fc427324f166e5",
+        "e86d02971a36bfb79d39f5b25af246e3ca6c9990c4ee4175b558889621cb7af1",
+        "e208f471eb7d66db130dbfe1d97d76fdef129a8f3189c17f3c93266dea0a80a5"
+      ],
+      "dependencies": [
+        {
+          "name": "jasper",
+          "hash": "6bpdesvy4n4j7wfutf7swilopawh7hpv",
+          "type": [
+            "build",
+            "link"
+          ]
+        },
+        {
+          "name": "libtool",
+          "hash": "gnjtilzklasfetj6xgtc2d7b2uuhxkpv",
+          "type": [
+            "build"
+          ]
+        },
+        {
+          "name": "m4",
+          "hash": "c4txrpbjwqisjcynhtyjsin5gqx7v4oc",
+          "type": [
+            "build"
+          ]
+        },
+        {
+          "name": "mpich",
+          "hash": "drnz4hrvst2e3rtmfy6q377hfk5t7mqa",
+          "type": [
+            "build",
+            "link"
+          ]
+        },
+        {
+          "name": "netcdf-c",
+          "hash": "wegvtnfoxtnqtdpytqjsrnbtjto56atm",
+          "type": [
+            "build",
+            "link"
+          ]
+        },
+        {
+          "name": "netcdf-fortran",
+          "hash": "5dkrthyjf32nv2y5xilacvotf3tkd4e2",
+          "type": [
+            "build",
+            "link"
+          ]
+        },
+        {
+          "name": "tcsh",
+          "hash": "ay462u3rs5g6cki4dhcgxyj2tyea65ge",
+          "type": [
+            "build"
+          ]
+        },
+        {
+          "name": "time",
+          "hash": "u7wys7fb7lfhu6wirsyaahmhxg7mxcg3",
+          "type": [
+            "build"
+          ]
+        },
+        {
+          "name": "wrf",
+          "hash": "hkdvgu7jybj2tkoqr6ww6hsuvzri7n7u",
+          "type": [
+            "build",
+            "link"
+          ]
+        }
+      ],
+      "hash": "eenxk2lcjox6uwfoojiqbvf3cksrfm75"
+    },
+    "6bpdesvy4n4j7wfutf7swilopawh7hpv": {
+      "name": "jasper",
+      "version": "3.0.3",
+      "arch": {
+        "platform": "linux",
+        "platform_os": "rocky8",
+        "target": {
+          "name": "broadwell",
+          "vendor": "GenuineIntel",
+          "features": [
+            "adx",
+            "aes",
+            "avx",
+            "avx2",
+            "bmi1",
+            "bmi2",
+            "f16c",
+            "fma",
+            "mmx",
+            "movbe",
+            "pclmulqdq",
+            "popcnt",
+            "rdrand",
+            "rdseed",
+            "sse",
+            "sse2",
+            "sse4_1",
+            "sse4_2",
+            "ssse3"
+          ],
+          "generation": 0,
+          "parents": [
+            "haswell"
+          ]
+        }
+      },
+      "compiler": {
+        "name": "gcc",
+        "version": "12.1.0"
+      },
+      "namespace": "builtin",
+      "parameters": {
+        "build_type": "Release",
+        "jpeg": true,
+        "opengl": false,
+        "shared": true,
+        "cflags": [],
+        "cppflags": [],
+        "cxxflags": [],
+        "fflags": [],
+        "ldflags": [],
+        "ldlibs": []
+      },
+      "external": {
+        "path": "/lfs/software/opt/linux-rocky8-broadwell/gcc-12.1.0/jasper-3.0.3-mipkqn2slsdycigzljx62qcmipup626u",
+        "module": null,
+        "extra_attributes": {}
+      },
+      "hash": "6bpdesvy4n4j7wfutf7swilopawh7hpv"
+    },
+    "gnjtilzklasfetj6xgtc2d7b2uuhxkpv": {
+      "name": "libtool",
+      "version": "2.4.7",
+      "arch": {
+        "platform": "linux",
+        "platform_os": "rocky8",
+        "target": {
+          "name": "broadwell",
+          "vendor": "GenuineIntel",
+          "features": [
+            "adx",
+            "aes",
+            "avx",
+            "avx2",
+            "bmi1",
+            "bmi2",
+            "f16c",
+            "fma",
+            "mmx",
+            "movbe",
+            "pclmulqdq",
+            "popcnt",
+            "rdrand",
+            "rdseed",
+            "sse",
+            "sse2",
+            "sse4_1",
+            "sse4_2",
+            "ssse3"
+          ],
+          "generation": 0,
+          "parents": [
+            "haswell"
+          ]
+        }
+      },
+      "compiler": {
+        "name": "gcc",
+        "version": "12.1.0"
+      },
+      "namespace": "builtin",
+      "parameters": {
+        "cflags": [],
+        "cppflags": [],
+        "cxxflags": [],
+        "fflags": [],
+        "ldflags": [],
+        "ldlibs": []
+      },
+      "external": {
+        "path": "/usr",
+        "module": null,
+        "extra_attributes": {}
+      },
+      "hash": "gnjtilzklasfetj6xgtc2d7b2uuhxkpv"
+    },
+    "c4txrpbjwqisjcynhtyjsin5gqx7v4oc": {
+      "name": "m4",
+      "version": "1.4.19",
+      "arch": {
+        "platform": "linux",
+        "platform_os": "rocky8",
+        "target": {
+          "name": "broadwell",
+          "vendor": "GenuineIntel",
+          "features": [
+            "adx",
+            "aes",
+            "avx",
+            "avx2",
+            "bmi1",
+            "bmi2",
+            "f16c",
+            "fma",
+            "mmx",
+            "movbe",
+            "pclmulqdq",
+            "popcnt",
+            "rdrand",
+            "rdseed",
+            "sse",
+            "sse2",
+            "sse4_1",
+            "sse4_2",
+            "ssse3"
+          ],
+          "generation": 0,
+          "parents": [
+            "haswell"
+          ]
+        }
+      },
+      "compiler": {
+        "name": "gcc",
+        "version": "12.1.0"
+      },
+      "namespace": "builtin",
+      "parameters": {
+        "patches": [
+          "9dc5fbd0d5cb1037ab1e6d0ecc74a30df218d0a94bdd5a02759a97f62daca573",
+          "bfdffa7c2eb01021d5849b36972c069693654ad826c1a20b53534009a4ec7a89"
+        ],
+        "sigsegv": true,
+        "cflags": [],
+        "cppflags": [],
+        "cxxflags": [],
+        "fflags": [],
+        "ldflags": [],
+        "ldlibs": []
+      },
+      "external": {
+        "path": "/lfs/software/opt/linux-rocky8-x86_64/gcc-8.5.0/m4-1.4.19-473jfaakulfrbezdq4vvqic2l4y4j5f3",
+        "module": null,
+        "extra_attributes": {}
+      },
+      "patches": [
+        "bfdffa7c2eb01021d5849b36972c069693654ad826c1a20b53534009a4ec7a89",
+        "9dc5fbd0d5cb1037ab1e6d0ecc74a30df218d0a94bdd5a02759a97f62daca573"
+      ],
+      "hash": "c4txrpbjwqisjcynhtyjsin5gqx7v4oc"
+    },
+    "drnz4hrvst2e3rtmfy6q377hfk5t7mqa": {
+      "name": "mpich",
+      "version": "3.4.3",
+      "arch": {
+        "platform": "linux",
+        "platform_os": "rocky8",
+        "target": {
+          "name": "broadwell",
+          "vendor": "GenuineIntel",
+          "features": [
+            "adx",
+            "aes",
+            "avx",
+            "avx2",
+            "bmi1",
+            "bmi2",
+            "f16c",
+            "fma",
+            "mmx",
+            "movbe",
+            "pclmulqdq",
+            "popcnt",
+            "rdrand",
+            "rdseed",
+            "sse",
+            "sse2",
+            "sse4_1",
+            "sse4_2",
+            "ssse3"
+          ],
+          "generation": 0,
+          "parents": [
+            "haswell"
+          ]
+        }
+      },
+      "compiler": {
+        "name": "gcc",
+        "version": "12.1.0"
+      },
+      "namespace": "builtin",
+      "parameters": {
+        "argobots": false,
+        "cuda": false,
+        "datatype-engine": "auto",
+        "device": "ch4",
+        "fortran": true,
+        "hwloc": true,
+        "hydra": true,
+        "libxml2": true,
+        "netmod": "ofi",
+        "pci": true,
+        "pmi": "pmi",
+        "rocm": false,
+        "romio": true,
+        "slurm": true,
+        "two_level_namespace": false,
+        "verbs": false,
+        "wrapperrpath": true,
+        "cflags": [],
+        "cppflags": [],
+        "cxxflags": [],
+        "fflags": [],
+        "ldflags": [],
+        "ldlibs": []
+      },
+      "external": {
+        "path": "/lfs/software/opt/linux-rocky8-x86_64/gcc-12.1.0/mpich-3.4.3-njy7jvav7quf5vzzmqamafqefnpwfphq",
+        "module": null,
+        "extra_attributes": {}
+      },
+      "hash": "drnz4hrvst2e3rtmfy6q377hfk5t7mqa"
+    },
+    "wegvtnfoxtnqtdpytqjsrnbtjto56atm": {
+      "name": "netcdf-c",
+      "version": "4.8.1",
+      "arch": {
+        "platform": "linux",
+        "platform_os": "rocky8",
+        "target": {
+          "name": "broadwell",
+          "vendor": "GenuineIntel",
+          "features": [
+            "adx",
+            "aes",
+            "avx",
+            "avx2",
+            "bmi1",
+            "bmi2",
+            "f16c",
+            "fma",
+            "mmx",
+            "movbe",
+            "pclmulqdq",
+            "popcnt",
+            "rdrand",
+            "rdseed",
+            "sse",
+            "sse2",
+            "sse4_1",
+            "sse4_2",
+            "ssse3"
+          ],
+          "generation": 0,
+          "parents": [
+            "haswell"
+          ]
+        }
+      },
+      "compiler": {
+        "name": "gcc",
+        "version": "12.1.0"
+      },
+      "namespace": "builtin",
+      "parameters": {
+        "dap": false,
+        "fsync": false,
+        "hdf4": false,
+        "jna": false,
+        "mpi": true,
+        "parallel-netcdf": false,
+        "patches": [
+          "de556dae6a691743dc527999cfb23ee414c2bbf7f71f33e940582a8a3a85cf17"
+        ],
+        "pic": true,
+        "shared": true,
+        "cflags": [],
+        "cppflags": [],
+        "cxxflags": [],
+        "fflags": [],
+        "ldflags": [],
+        "ldlibs": []
+      },
+      "external": {
+        "path": "/lfs/software/opt/linux-rocky8-x86_64/gcc-12.1.0/netcdf-c-4.8.1-lqx2auaoeuizzllnln6bmime4o3mnajk",
+        "module": null,
+        "extra_attributes": {}
+      },
+      "patches": [
+        "de556dae6a691743dc527999cfb23ee414c2bbf7f71f33e940582a8a3a85cf17"
+      ],
+      "hash": "wegvtnfoxtnqtdpytqjsrnbtjto56atm"
+    },
+    "5dkrthyjf32nv2y5xilacvotf3tkd4e2": {
+      "name": "netcdf-fortran",
+      "version": "4.5.4",
+      "arch": {
+        "platform": "linux",
+        "platform_os": "rocky8",
+        "target": {
+          "name": "broadwell",
+          "vendor": "GenuineIntel",
+          "features": [
+            "adx",
+            "aes",
+            "avx",
+            "avx2",
+            "bmi1",
+            "bmi2",
+            "f16c",
+            "fma",
+            "mmx",
+            "movbe",
+            "pclmulqdq",
+            "popcnt",
+            "rdrand",
+            "rdseed",
+            "sse",
+            "sse2",
+            "sse4_1",
+            "sse4_2",
+            "ssse3"
+          ],
+          "generation": 0,
+          "parents": [
+            "haswell"
+          ]
+        }
+      },
+      "compiler": {
+        "name": "gcc",
+        "version": "12.1.0"
+      },
+      "namespace": "builtin",
+      "parameters": {
+        "doc": false,
+        "pic": true,
+        "shared": true,
+        "cflags": [],
+        "cppflags": [],
+        "cxxflags": [],
+        "fflags": [],
+        "ldflags": [],
+        "ldlibs": []
+      },
+      "external": {
+        "path": "/lfs/software/opt/linux-rocky8-x86_64/gcc-12.1.0/netcdf-fortran-4.5.4-jqzbd2vzvmb2kanw6mpl3q4ydmroa7yk",
+        "module": null,
+        "extra_attributes": {}
+      },
+      "hash": "5dkrthyjf32nv2y5xilacvotf3tkd4e2"
+    },
+    "ay462u3rs5g6cki4dhcgxyj2tyea65ge": {
+      "name": "tcsh",
+      "version": "6.24.00",
+      "arch": {
+        "platform": "linux",
+        "platform_os": "rocky8",
+        "target": {
+          "name": "broadwell",
+          "vendor": "GenuineIntel",
+          "features": [
+            "adx",
+            "aes",
+            "avx",
+            "avx2",
+            "bmi1",
+            "bmi2",
+            "f16c",
+            "fma",
+            "mmx",
+            "movbe",
+            "pclmulqdq",
+            "popcnt",
+            "rdrand",
+            "rdseed",
+            "sse",
+            "sse2",
+            "sse4_1",
+            "sse4_2",
+            "ssse3"
+          ],
+          "generation": 0,
+          "parents": [
+            "haswell"
+          ]
+        }
+      },
+      "compiler": {
+        "name": "gcc",
+        "version": "12.1.0"
+      },
+      "namespace": "builtin",
+      "parameters": {
+        "patches": [
+          "3a4e60fe56a450632140c48acbf14d22850c1d72835bf441e3f8514d6c617a9f"
+        ],
+        "cflags": [],
+        "cppflags": [],
+        "cxxflags": [],
+        "fflags": [],
+        "ldflags": [],
+        "ldlibs": []
+      },
+      "patches": [
+        "3a4e60fe56a450632140c48acbf14d22850c1d72835bf441e3f8514d6c617a9f"
+      ],
+      "dependencies": [
+        {
+          "name": "ncurses",
+          "hash": "thkbb4rrwhj624gzvfdijkbvamgnqvqw",
+          "type": [
+            "build",
+            "link"
+          ]
+        }
+      ],
+      "hash": "ay462u3rs5g6cki4dhcgxyj2tyea65ge"
+    },
+    "thkbb4rrwhj624gzvfdijkbvamgnqvqw": {
+      "name": "ncurses",
+      "version": "6.2",
+      "arch": {
+        "platform": "linux",
+        "platform_os": "rocky8",
+        "target": {
+          "name": "broadwell",
+          "vendor": "GenuineIntel",
+          "features": [
+            "adx",
+            "aes",
+            "avx",
+            "avx2",
+            "bmi1",
+            "bmi2",
+            "f16c",
+            "fma",
+            "mmx",
+            "movbe",
+            "pclmulqdq",
+            "popcnt",
+            "rdrand",
+            "rdseed",
+            "sse",
+            "sse2",
+            "sse4_1",
+            "sse4_2",
+            "ssse3"
+          ],
+          "generation": 0,
+          "parents": [
+            "haswell"
+          ]
+        }
+      },
+      "compiler": {
+        "name": "gcc",
+        "version": "12.1.0"
+      },
+      "namespace": "builtin",
+      "parameters": {
+        "abi": "none",
+        "symlinks": false,
+        "termlib": true,
+        "cflags": [],
+        "cppflags": [],
+        "cxxflags": [],
+        "fflags": [],
+        "ldflags": [],
+        "ldlibs": []
+      },
+      "external": {
+        "path": "/lfs/software/opt/linux-rocky8-x86_64/gcc-8.5.0/ncurses-6.2-pdybdlbzpybsbvrdsrro4rzg2t2o3tzz",
+        "module": null,
+        "extra_attributes": {}
+      },
+      "hash": "thkbb4rrwhj624gzvfdijkbvamgnqvqw"
+    },
+    "u7wys7fb7lfhu6wirsyaahmhxg7mxcg3": {
+      "name": "time",
+      "version": "1.9",
+      "arch": {
+        "platform": "linux",
+        "platform_os": "rocky8",
+        "target": {
+          "name": "broadwell",
+          "vendor": "GenuineIntel",
+          "features": [
+            "adx",
+            "aes",
+            "avx",
+            "avx2",
+            "bmi1",
+            "bmi2",
+            "f16c",
+            "fma",
+            "mmx",
+            "movbe",
+            "pclmulqdq",
+            "popcnt",
+            "rdrand",
+            "rdseed",
+            "sse",
+            "sse2",
+            "sse4_1",
+            "sse4_2",
+            "ssse3"
+          ],
+          "generation": 0,
+          "parents": [
+            "haswell"
+          ]
+        }
+      },
+      "compiler": {
+        "name": "gcc",
+        "version": "12.1.0"
+      },
+      "namespace": "builtin",
+      "parameters": {
+        "cflags": [],
+        "cppflags": [],
+        "cxxflags": [],
+        "fflags": [],
+        "ldflags": [],
+        "ldlibs": []
+      },
+      "hash": "u7wys7fb7lfhu6wirsyaahmhxg7mxcg3"
+    },
+    "hkdvgu7jybj2tkoqr6ww6hsuvzri7n7u": {
+      "name": "wrf",
+      "version": "4.3.3",
+      "arch": {
+        "platform": "linux",
+        "platform_os": "rocky8",
+        "target": {
+          "name": "broadwell",
+          "vendor": "GenuineIntel",
+          "features": [
+            "adx",
+            "aes",
+            "avx",
+            "avx2",
+            "bmi1",
+            "bmi2",
+            "f16c",
+            "fma",
+            "mmx",
+            "movbe",
+            "pclmulqdq",
+            "popcnt",
+            "rdrand",
+            "rdseed",
+            "sse",
+            "sse2",
+            "sse4_1",
+            "sse4_2",
+            "ssse3"
+          ],
+          "generation": 0,
+          "parents": [
+            "haswell"
+          ]
+        }
+      },
+      "compiler": {
+        "name": "gcc",
+        "version": "12.1.0"
+      },
+      "namespace": "builtin",
+      "parameters": {
+        "build_type": "dmpar",
+        "compile_type": "em_real",
+        "nesting": "basic",
+        "patches": [
+          "01c0f71a4c742603ca6418977bdc71c8c5ccf882e54e6c193ec2adaf98e31511",
+          "68548f61600d8503bf14a1ab8b90e0e20375fe9466fa1e205b8d835174fcdbef",
+          "b3f063c60c61ac6655f91cbb266e3a0dafc06449ebb701cb56541c5e9bff65e9",
+          "e07c39c644dab0cad373e4ff3809db22128b376c139416d9e774b96e1f86e7e7",
+          "e4971f64f4d7d8c19fa0313d43e575dd3554a2e714d9391bc095b3ad18b35e22",
+          "e6f3db399606f09a582999506d63dc6c52fcb08efe83a3c2931107c8d927858d",
+          "f3dd50d3de8dc26d12ab5bceeaa80ec05a722834dde97107d7bb194c9f67045a",
+          "fa78635a0330f8116f2193c08db7809e5d31dc6b994bab6eec3ce9f2e3aef5b7"
+        ],
+        "pnetcdf": true,
+        "cflags": [],
+        "cppflags": [],
+        "cxxflags": [],
+        "fflags": [],
+        "ldflags": [],
+        "ldlibs": []
+      },
+      "external": {
+        "path": "/lfs/software/opt/linux-rocky8-broadwell/gcc-12.1.0/wrf-4.3.3-sd37muvy4ghe7zs6biezxokkozbz66me",
+        "module": null,
+        "extra_attributes": {}
+      },
+      "patches": [
+        "e6f3db399606f09a582999506d63dc6c52fcb08efe83a3c2931107c8d927858d",
+        "f3dd50d3de8dc26d12ab5bceeaa80ec05a722834dde97107d7bb194c9f67045a",
+        "b3f063c60c61ac6655f91cbb266e3a0dafc06449ebb701cb56541c5e9bff65e9",
+        "e07c39c644dab0cad373e4ff3809db22128b376c139416d9e774b96e1f86e7e7",
+        "68548f61600d8503bf14a1ab8b90e0e20375fe9466fa1e205b8d835174fcdbef",
+        "01c0f71a4c742603ca6418977bdc71c8c5ccf882e54e6c193ec2adaf98e31511",
+        "e4971f64f4d7d8c19fa0313d43e575dd3554a2e714d9391bc095b3ad18b35e22",
+        "fa78635a0330f8116f2193c08db7809e5d31dc6b994bab6eec3ce9f2e3aef5b7"
+      ],
+      "hash": "hkdvgu7jybj2tkoqr6ww6hsuvzri7n7u"
+    },
+    "ze5x36ftlf3y5knxuwqg36mehfov7iwx": {
+      "name": "wps",
+      "version": "4.3.1",
+      "arch": {
+        "platform": "linux",
+        "platform_os": "rocky8",
+        "target": {
+          "name": "broadwell",
+          "vendor": "GenuineIntel",
+          "features": [
+            "adx",
+            "aes",
+            "avx",
+            "avx2",
+            "bmi1",
+            "bmi2",
+            "f16c",
+            "fma",
+            "mmx",
+            "movbe",
+            "pclmulqdq",
+            "popcnt",
+            "rdrand",
+            "rdseed",
+            "sse",
+            "sse2",
+            "sse4_1",
+            "sse4_2",
+            "ssse3"
+          ],
+          "generation": 0,
+          "parents": [
+            "haswell"
+          ]
+        }
+      },
+      "compiler": {
+        "name": "intel",
+        "version": "2021.4.0"
+      },
+      "namespace": "builtin",
+      "parameters": {
+        "build_type": "serial",
+        "patches": [
+          "3f0d9999f2ab438b4625f46c95b84998167ca8652f692b09f8fc427324f166e5",
+          "62c1bcc48dca8b48f2b766bf08a4f787452e3431b03d49efd34ca62338c2d190",
+          "e208f471eb7d66db130dbfe1d97d76fdef129a8f3189c17f3c93266dea0a80a5",
+          "e86d02971a36bfb79d39f5b25af246e3ca6c9990c4ee4175b558889621cb7af1"
+        ],
+        "cflags": [],
+        "cppflags": [],
+        "cxxflags": [],
+        "fflags": [],
+        "ldflags": [],
+        "ldlibs": []
+      },
+      "patches": [
+        "62c1bcc48dca8b48f2b766bf08a4f787452e3431b03d49efd34ca62338c2d190",
+        "3f0d9999f2ab438b4625f46c95b84998167ca8652f692b09f8fc427324f166e5",
+        "e86d02971a36bfb79d39f5b25af246e3ca6c9990c4ee4175b558889621cb7af1",
+        "e208f471eb7d66db130dbfe1d97d76fdef129a8f3189c17f3c93266dea0a80a5"
+      ],
+      "dependencies": [
+        {
+          "name": "jasper",
+          "hash": "xadohtmjxmteyfjq3do7xavhf3q74wpe",
+          "type": [
+            "build",
+            "link"
+          ]
+        },
+        {
+          "name": "libtool",
+          "hash": "fqw2cru7fac7pq3sy4gqdwuff54g5nn3",
+          "type": [
+            "build"
+          ]
+        },
+        {
+          "name": "m4",
+          "hash": "rafopofhbkpemwq4uam7nslsodfb2jdt",
+          "type": [
+            "build"
+          ]
+        },
+        {
+          "name": "mpich",
+          "hash": "gggfega27zws2ow47xk75p36p3qu7cfk",
+          "type": [
+            "build",
+            "link"
+          ]
+        },
+        {
+          "name": "netcdf-c",
+          "hash": "mt4kcfjilkgxns7gp7qrtuzutx7bvqsf",
+          "type": [
+            "build",
+            "link"
+          ]
+        },
+        {
+          "name": "netcdf-fortran",
+          "hash": "kesnuauig3j3u2kcqwzivi24qemuiqep",
+          "type": [
+            "build",
+            "link"
+          ]
+        },
+        {
+          "name": "tcsh",
+          "hash": "tazx6itv25suxhbz6y7o2e7xudjotkzr",
+          "type": [
+            "build"
+          ]
+        },
+        {
+          "name": "time",
+          "hash": "cgq2gfvloz25mmmkcmgyl5s4yrbwiceu",
+          "type": [
+            "build"
+          ]
+        },
+        {
+          "name": "wrf",
+          "hash": "h4344g4k5jfheqy5u7mtyoethdhz6sxe",
+          "type": [
+            "build",
+            "link"
+          ]
+        }
+      ],
+      "hash": "ze5x36ftlf3y5knxuwqg36mehfov7iwx"
+    },
+    "xadohtmjxmteyfjq3do7xavhf3q74wpe": {
+      "name": "jasper",
+      "version": "3.0.3",
+      "arch": {
+        "platform": "linux",
+        "platform_os": "rocky8",
+        "target": {
+          "name": "broadwell",
+          "vendor": "GenuineIntel",
+          "features": [
+            "adx",
+            "aes",
+            "avx",
+            "avx2",
+            "bmi1",
+            "bmi2",
+            "f16c",
+            "fma",
+            "mmx",
+            "movbe",
+            "pclmulqdq",
+            "popcnt",
+            "rdrand",
+            "rdseed",
+            "sse",
+            "sse2",
+            "sse4_1",
+            "sse4_2",
+            "ssse3"
+          ],
+          "generation": 0,
+          "parents": [
+            "haswell"
+          ]
+        }
+      },
+      "compiler": {
+        "name": "intel",
+        "version": "2021.4.0"
+      },
+      "namespace": "builtin",
+      "parameters": {
+        "build_type": "Release",
+        "jpeg": true,
+        "opengl": false,
+        "shared": true,
+        "cflags": [],
+        "cppflags": [],
+        "cxxflags": [],
+        "fflags": [],
+        "ldflags": [],
+        "ldlibs": []
+      },
+      "external": {
+        "path": "/lfs/software/opt/linux-rocky8-broadwell/intel-2021.4.0/jasper-3.0.3-kb2robyk4wcp5m5bsc5bi5iqbrlwstbh",
+        "module": null,
+        "extra_attributes": {}
+      },
+      "hash": "xadohtmjxmteyfjq3do7xavhf3q74wpe"
+    },
+    "fqw2cru7fac7pq3sy4gqdwuff54g5nn3": {
+      "name": "libtool",
+      "version": "2.4.7",
+      "arch": {
+        "platform": "linux",
+        "platform_os": "rocky8",
+        "target": {
+          "name": "broadwell",
+          "vendor": "GenuineIntel",
+          "features": [
+            "adx",
+            "aes",
+            "avx",
+            "avx2",
+            "bmi1",
+            "bmi2",
+            "f16c",
+            "fma",
+            "mmx",
+            "movbe",
+            "pclmulqdq",
+            "popcnt",
+            "rdrand",
+            "rdseed",
+            "sse",
+            "sse2",
+            "sse4_1",
+            "sse4_2",
+            "ssse3"
+          ],
+          "generation": 0,
+          "parents": [
+            "haswell"
+          ]
+        }
+      },
+      "compiler": {
+        "name": "intel",
+        "version": "2021.4.0"
+      },
+      "namespace": "builtin",
+      "parameters": {
+        "cflags": [],
+        "cppflags": [],
+        "cxxflags": [],
+        "fflags": [],
+        "ldflags": [],
+        "ldlibs": []
+      },
+      "external": {
+        "path": "/usr",
+        "module": null,
+        "extra_attributes": {}
+      },
+      "hash": "fqw2cru7fac7pq3sy4gqdwuff54g5nn3"
+    },
+    "rafopofhbkpemwq4uam7nslsodfb2jdt": {
+      "name": "m4",
+      "version": "1.4.19",
+      "arch": {
+        "platform": "linux",
+        "platform_os": "rocky8",
+        "target": {
+          "name": "broadwell",
+          "vendor": "GenuineIntel",
+          "features": [
+            "adx",
+            "aes",
+            "avx",
+            "avx2",
+            "bmi1",
+            "bmi2",
+            "f16c",
+            "fma",
+            "mmx",
+            "movbe",
+            "pclmulqdq",
+            "popcnt",
+            "rdrand",
+            "rdseed",
+            "sse",
+            "sse2",
+            "sse4_1",
+            "sse4_2",
+            "ssse3"
+          ],
+          "generation": 0,
+          "parents": [
+            "haswell"
+          ]
+        }
+      },
+      "compiler": {
+        "name": "intel",
+        "version": "2021.4.0"
+      },
+      "namespace": "builtin",
+      "parameters": {
+        "patches": [
+          "9dc5fbd0d5cb1037ab1e6d0ecc74a30df218d0a94bdd5a02759a97f62daca573",
+          "bfdffa7c2eb01021d5849b36972c069693654ad826c1a20b53534009a4ec7a89"
+        ],
+        "sigsegv": true,
+        "cflags": [],
+        "cppflags": [],
+        "cxxflags": [],
+        "fflags": [],
+        "ldflags": [],
+        "ldlibs": []
+      },
+      "external": {
+        "path": "/lfs/software/opt/linux-rocky8-x86_64/gcc-8.5.0/m4-1.4.19-473jfaakulfrbezdq4vvqic2l4y4j5f3",
+        "module": null,
+        "extra_attributes": {}
+      },
+      "patches": [
+        "bfdffa7c2eb01021d5849b36972c069693654ad826c1a20b53534009a4ec7a89",
+        "9dc5fbd0d5cb1037ab1e6d0ecc74a30df218d0a94bdd5a02759a97f62daca573"
+      ],
+      "hash": "rafopofhbkpemwq4uam7nslsodfb2jdt"
+    },
+    "gggfega27zws2ow47xk75p36p3qu7cfk": {
+      "name": "mpich",
+      "version": "3.4.3",
+      "arch": {
+        "platform": "linux",
+        "platform_os": "rocky8",
+        "target": {
+          "name": "broadwell",
+          "vendor": "GenuineIntel",
+          "features": [
+            "adx",
+            "aes",
+            "avx",
+            "avx2",
+            "bmi1",
+            "bmi2",
+            "f16c",
+            "fma",
+            "mmx",
+            "movbe",
+            "pclmulqdq",
+            "popcnt",
+            "rdrand",
+            "rdseed",
+            "sse",
+            "sse2",
+            "sse4_1",
+            "sse4_2",
+            "ssse3"
+          ],
+          "generation": 0,
+          "parents": [
+            "haswell"
+          ]
+        }
+      },
+      "compiler": {
+        "name": "intel",
+        "version": "2021.4.0"
+      },
+      "namespace": "builtin",
+      "parameters": {
+        "argobots": false,
+        "cuda": false,
+        "datatype-engine": "auto",
+        "device": "ch4",
+        "fortran": true,
+        "hwloc": true,
+        "hydra": true,
+        "libxml2": true,
+        "netmod": "ofi",
+        "pci": true,
+        "pmi": "pmi",
+        "rocm": false,
+        "romio": true,
+        "slurm": true,
+        "two_level_namespace": false,
+        "verbs": false,
+        "wrapperrpath": true,
+        "cflags": [],
+        "cppflags": [],
+        "cxxflags": [],
+        "fflags": [],
+        "ldflags": [],
+        "ldlibs": []
+      },
+      "external": {
+        "path": "/lfs/software/opt/linux-rocky8-x86_64/intel-2021.4.0/mpich-3.4.3-uzw3ca7d6iisjr3nolk2amjlw673p6gg",
+        "module": null,
+        "extra_attributes": {}
+      },
+      "hash": "gggfega27zws2ow47xk75p36p3qu7cfk"
+    },
+    "mt4kcfjilkgxns7gp7qrtuzutx7bvqsf": {
+      "name": "netcdf-c",
+      "version": "4.8.1",
+      "arch": {
+        "platform": "linux",
+        "platform_os": "rocky8",
+        "target": {
+          "name": "broadwell",
+          "vendor": "GenuineIntel",
+          "features": [
+            "adx",
+            "aes",
+            "avx",
+            "avx2",
+            "bmi1",
+            "bmi2",
+            "f16c",
+            "fma",
+            "mmx",
+            "movbe",
+            "pclmulqdq",
+            "popcnt",
+            "rdrand",
+            "rdseed",
+            "sse",
+            "sse2",
+            "sse4_1",
+            "sse4_2",
+            "ssse3"
+          ],
+          "generation": 0,
+          "parents": [
+            "haswell"
+          ]
+        }
+      },
+      "compiler": {
+        "name": "intel",
+        "version": "2021.4.0"
+      },
+      "namespace": "builtin",
+      "parameters": {
+        "dap": false,
+        "fsync": false,
+        "hdf4": false,
+        "jna": false,
+        "mpi": true,
+        "parallel-netcdf": false,
+        "patches": [
+          "de556dae6a691743dc527999cfb23ee414c2bbf7f71f33e940582a8a3a85cf17"
+        ],
+        "pic": true,
+        "shared": true,
+        "cflags": [],
+        "cppflags": [],
+        "cxxflags": [],
+        "fflags": [],
+        "ldflags": [],
+        "ldlibs": []
+      },
+      "external": {
+        "path": "/lfs/software/opt/linux-rocky8-x86_64/intel-2021.4.0/netcdf-c-4.8.1-77tvoxowxhud47wyldvn6wpzkf2v57hw",
+        "module": null,
+        "extra_attributes": {}
+      },
+      "patches": [
+        "de556dae6a691743dc527999cfb23ee414c2bbf7f71f33e940582a8a3a85cf17"
+      ],
+      "hash": "mt4kcfjilkgxns7gp7qrtuzutx7bvqsf"
+    },
+    "kesnuauig3j3u2kcqwzivi24qemuiqep": {
+      "name": "netcdf-fortran",
+      "version": "4.5.4",
+      "arch": {
+        "platform": "linux",
+        "platform_os": "rocky8",
+        "target": {
+          "name": "broadwell",
+          "vendor": "GenuineIntel",
+          "features": [
+            "adx",
+            "aes",
+            "avx",
+            "avx2",
+            "bmi1",
+            "bmi2",
+            "f16c",
+            "fma",
+            "mmx",
+            "movbe",
+            "pclmulqdq",
+            "popcnt",
+            "rdrand",
+            "rdseed",
+            "sse",
+            "sse2",
+            "sse4_1",
+            "sse4_2",
+            "ssse3"
+          ],
+          "generation": 0,
+          "parents": [
+            "haswell"
+          ]
+        }
+      },
+      "compiler": {
+        "name": "intel",
+        "version": "2021.4.0"
+      },
+      "namespace": "builtin",
+      "parameters": {
+        "doc": false,
+        "pic": true,
+        "shared": true,
+        "cflags": [],
+        "cppflags": [],
+        "cxxflags": [],
+        "fflags": [],
+        "ldflags": [],
+        "ldlibs": []
+      },
+      "external": {
+        "path": "/lfs/software/opt/linux-rocky8-x86_64/intel-2021.4.0/netcdf-fortran-4.5.4-yke7jalztqc2txyvbswovjinoomodmjf",
+        "module": null,
+        "extra_attributes": {}
+      },
+      "hash": "kesnuauig3j3u2kcqwzivi24qemuiqep"
+    },
+    "tazx6itv25suxhbz6y7o2e7xudjotkzr": {
+      "name": "tcsh",
+      "version": "6.24.00",
+      "arch": {
+        "platform": "linux",
+        "platform_os": "rocky8",
+        "target": {
+          "name": "broadwell",
+          "vendor": "GenuineIntel",
+          "features": [
+            "adx",
+            "aes",
+            "avx",
+            "avx2",
+            "bmi1",
+            "bmi2",
+            "f16c",
+            "fma",
+            "mmx",
+            "movbe",
+            "pclmulqdq",
+            "popcnt",
+            "rdrand",
+            "rdseed",
+            "sse",
+            "sse2",
+            "sse4_1",
+            "sse4_2",
+            "ssse3"
+          ],
+          "generation": 0,
+          "parents": [
+            "haswell"
+          ]
+        }
+      },
+      "compiler": {
+        "name": "intel",
+        "version": "2021.4.0"
+      },
+      "namespace": "builtin",
+      "parameters": {
+        "patches": [
+          "3a4e60fe56a450632140c48acbf14d22850c1d72835bf441e3f8514d6c617a9f"
+        ],
+        "cflags": [],
+        "cppflags": [],
+        "cxxflags": [],
+        "fflags": [],
+        "ldflags": [],
+        "ldlibs": []
+      },
+      "patches": [
+        "3a4e60fe56a450632140c48acbf14d22850c1d72835bf441e3f8514d6c617a9f"
+      ],
+      "dependencies": [
+        {
+          "name": "ncurses",
+          "hash": "bwwkhdvyl33donrml4jbazi75vuge3xj",
+          "type": [
+            "build",
+            "link"
+          ]
+        }
+      ],
+      "hash": "tazx6itv25suxhbz6y7o2e7xudjotkzr"
+    },
+    "bwwkhdvyl33donrml4jbazi75vuge3xj": {
+      "name": "ncurses",
+      "version": "6.2",
+      "arch": {
+        "platform": "linux",
+        "platform_os": "rocky8",
+        "target": {
+          "name": "broadwell",
+          "vendor": "GenuineIntel",
+          "features": [
+            "adx",
+            "aes",
+            "avx",
+            "avx2",
+            "bmi1",
+            "bmi2",
+            "f16c",
+            "fma",
+            "mmx",
+            "movbe",
+            "pclmulqdq",
+            "popcnt",
+            "rdrand",
+            "rdseed",
+            "sse",
+            "sse2",
+            "sse4_1",
+            "sse4_2",
+            "ssse3"
+          ],
+          "generation": 0,
+          "parents": [
+            "haswell"
+          ]
+        }
+      },
+      "compiler": {
+        "name": "intel",
+        "version": "2021.4.0"
+      },
+      "namespace": "builtin",
+      "parameters": {
+        "abi": "none",
+        "symlinks": false,
+        "termlib": true,
+        "cflags": [],
+        "cppflags": [],
+        "cxxflags": [],
+        "fflags": [],
+        "ldflags": [],
+        "ldlibs": []
+      },
+      "external": {
+        "path": "/lfs/software/opt/linux-rocky8-x86_64/gcc-8.5.0/ncurses-6.2-pdybdlbzpybsbvrdsrro4rzg2t2o3tzz",
+        "module": null,
+        "extra_attributes": {}
+      },
+      "hash": "bwwkhdvyl33donrml4jbazi75vuge3xj"
+    },
+    "cgq2gfvloz25mmmkcmgyl5s4yrbwiceu": {
+      "name": "time",
+      "version": "1.9",
+      "arch": {
+        "platform": "linux",
+        "platform_os": "rocky8",
+        "target": {
+          "name": "broadwell",
+          "vendor": "GenuineIntel",
+          "features": [
+            "adx",
+            "aes",
+            "avx",
+            "avx2",
+            "bmi1",
+            "bmi2",
+            "f16c",
+            "fma",
+            "mmx",
+            "movbe",
+            "pclmulqdq",
+            "popcnt",
+            "rdrand",
+            "rdseed",
+            "sse",
+            "sse2",
+            "sse4_1",
+            "sse4_2",
+            "ssse3"
+          ],
+          "generation": 0,
+          "parents": [
+            "haswell"
+          ]
+        }
+      },
+      "compiler": {
+        "name": "intel",
+        "version": "2021.4.0"
+      },
+      "namespace": "builtin",
+      "parameters": {
+        "cflags": [],
+        "cppflags": [],
+        "cxxflags": [],
+        "fflags": [],
+        "ldflags": [],
+        "ldlibs": []
+      },
+      "hash": "cgq2gfvloz25mmmkcmgyl5s4yrbwiceu"
+    },
+    "h4344g4k5jfheqy5u7mtyoethdhz6sxe": {
+      "name": "wrf",
+      "version": "4.3.3",
+      "arch": {
+        "platform": "linux",
+        "platform_os": "rocky8",
+        "target": {
+          "name": "broadwell",
+          "vendor": "GenuineIntel",
+          "features": [
+            "adx",
+            "aes",
+            "avx",
+            "avx2",
+            "bmi1",
+            "bmi2",
+            "f16c",
+            "fma",
+            "mmx",
+            "movbe",
+            "pclmulqdq",
+            "popcnt",
+            "rdrand",
+            "rdseed",
+            "sse",
+            "sse2",
+            "sse4_1",
+            "sse4_2",
+            "ssse3"
+          ],
+          "generation": 0,
+          "parents": [
+            "haswell"
+          ]
+        }
+      },
+      "compiler": {
+        "name": "intel",
+        "version": "2021.4.0"
+      },
+      "namespace": "builtin",
+      "parameters": {
+        "build_type": "dmpar",
+        "compile_type": "em_real",
+        "nesting": "basic",
+        "patches": [
+          "01c0f71a4c742603ca6418977bdc71c8c5ccf882e54e6c193ec2adaf98e31511",
+          "68548f61600d8503bf14a1ab8b90e0e20375fe9466fa1e205b8d835174fcdbef",
+          "b3f063c60c61ac6655f91cbb266e3a0dafc06449ebb701cb56541c5e9bff65e9",
+          "e07c39c644dab0cad373e4ff3809db22128b376c139416d9e774b96e1f86e7e7",
+          "e4971f64f4d7d8c19fa0313d43e575dd3554a2e714d9391bc095b3ad18b35e22",
+          "e6f3db399606f09a582999506d63dc6c52fcb08efe83a3c2931107c8d927858d",
+          "f3dd50d3de8dc26d12ab5bceeaa80ec05a722834dde97107d7bb194c9f67045a",
+          "fa78635a0330f8116f2193c08db7809e5d31dc6b994bab6eec3ce9f2e3aef5b7"
+        ],
+        "pnetcdf": true,
+        "cflags": [],
+        "cppflags": [],
+        "cxxflags": [],
+        "fflags": [],
+        "ldflags": [],
+        "ldlibs": []
+      },
+      "external": {
+        "path": "/lfs/software/opt/linux-rocky8-broadwell/intel-2021.4.0/wrf-4.3.3-pbtzkb37rk2pimqetvr4p5bf3zy47myg",
+        "module": null,
+        "extra_attributes": {}
+      },
+      "patches": [
+        "e6f3db399606f09a582999506d63dc6c52fcb08efe83a3c2931107c8d927858d",
+        "f3dd50d3de8dc26d12ab5bceeaa80ec05a722834dde97107d7bb194c9f67045a",
+        "b3f063c60c61ac6655f91cbb266e3a0dafc06449ebb701cb56541c5e9bff65e9",
+        "e07c39c644dab0cad373e4ff3809db22128b376c139416d9e774b96e1f86e7e7",
+        "68548f61600d8503bf14a1ab8b90e0e20375fe9466fa1e205b8d835174fcdbef",
+        "01c0f71a4c742603ca6418977bdc71c8c5ccf882e54e6c193ec2adaf98e31511",
+        "e4971f64f4d7d8c19fa0313d43e575dd3554a2e714d9391bc095b3ad18b35e22",
+        "fa78635a0330f8116f2193c08db7809e5d31dc6b994bab6eec3ce9f2e3aef5b7"
+      ],
+      "hash": "h4344g4k5jfheqy5u7mtyoethdhz6sxe"
+    },
+    "ywhijwakb4xtl76x53xw3l754mfmc6fz": {
+      "name": "wps",
+      "version": "4.3.1",
+      "arch": {
+        "platform": "linux",
+        "platform_os": "rocky8",
+        "target": {
+          "name": "broadwell",
+          "vendor": "GenuineIntel",
+          "features": [
+            "adx",
+            "aes",
+            "avx",
+            "avx2",
+            "bmi1",
+            "bmi2",
+            "f16c",
+            "fma",
+            "mmx",
+            "movbe",
+            "pclmulqdq",
+            "popcnt",
+            "rdrand",
+            "rdseed",
+            "sse",
+            "sse2",
+            "sse4_1",
+            "sse4_2",
+            "ssse3"
+          ],
+          "generation": 0,
+          "parents": [
+            "haswell"
+          ]
+        }
+      },
+      "compiler": {
+        "name": "gcc",
+        "version": "12.1.0"
+      },
+      "namespace": "builtin",
+      "parameters": {
+        "build_type": "serial",
+        "patches": [
+          "3f0d9999f2ab438b4625f46c95b84998167ca8652f692b09f8fc427324f166e5",
+          "62c1bcc48dca8b48f2b766bf08a4f787452e3431b03d49efd34ca62338c2d190",
+          "e208f471eb7d66db130dbfe1d97d76fdef129a8f3189c17f3c93266dea0a80a5",
+          "e86d02971a36bfb79d39f5b25af246e3ca6c9990c4ee4175b558889621cb7af1"
+        ],
+        "cflags": [],
+        "cppflags": [],
+        "cxxflags": [],
+        "fflags": [],
+        "ldflags": [],
+        "ldlibs": []
+      },
+      "patches": [
+        "62c1bcc48dca8b48f2b766bf08a4f787452e3431b03d49efd34ca62338c2d190",
+        "3f0d9999f2ab438b4625f46c95b84998167ca8652f692b09f8fc427324f166e5",
+        "e86d02971a36bfb79d39f5b25af246e3ca6c9990c4ee4175b558889621cb7af1",
+        "e208f471eb7d66db130dbfe1d97d76fdef129a8f3189c17f3c93266dea0a80a5"
+      ],
+      "dependencies": [
+        {
+          "name": "jasper",
+          "hash": "6bpdesvy4n4j7wfutf7swilopawh7hpv",
+          "type": [
+            "build",
+            "link"
+          ]
+        },
+        {
+          "name": "libtool",
+          "hash": "gnjtilzklasfetj6xgtc2d7b2uuhxkpv",
+          "type": [
+            "build"
+          ]
+        },
+        {
+          "name": "m4",
+          "hash": "c4txrpbjwqisjcynhtyjsin5gqx7v4oc",
+          "type": [
+            "build"
+          ]
+        },
+        {
+          "name": "netcdf-c",
+          "hash": "wegvtnfoxtnqtdpytqjsrnbtjto56atm",
+          "type": [
+            "build",
+            "link"
+          ]
+        },
+        {
+          "name": "netcdf-fortran",
+          "hash": "5dkrthyjf32nv2y5xilacvotf3tkd4e2",
+          "type": [
+            "build",
+            "link"
+          ]
+        },
+        {
+          "name": "openmpi",
+          "hash": "mdmkydw3zqzavfo4yd3yoemjb4u2mvdb",
+          "type": [
+            "build",
+            "link"
+          ]
+        },
+        {
+          "name": "tcsh",
+          "hash": "ay462u3rs5g6cki4dhcgxyj2tyea65ge",
+          "type": [
+            "build"
+          ]
+        },
+        {
+          "name": "time",
+          "hash": "u7wys7fb7lfhu6wirsyaahmhxg7mxcg3",
+          "type": [
+            "build"
+          ]
+        },
+        {
+          "name": "wrf",
+          "hash": "xop6htp3jz2grrpm3ocfw4hixxpget5z",
+          "type": [
+            "build",
+            "link"
+          ]
+        }
+      ],
+      "hash": "ywhijwakb4xtl76x53xw3l754mfmc6fz"
+    },
+    "mdmkydw3zqzavfo4yd3yoemjb4u2mvdb": {
+      "name": "openmpi",
+      "version": "4.1.3",
+      "arch": {
+        "platform": "linux",
+        "platform_os": "rocky8",
+        "target": {
+          "name": "broadwell",
+          "vendor": "GenuineIntel",
+          "features": [
+            "adx",
+            "aes",
+            "avx",
+            "avx2",
+            "bmi1",
+            "bmi2",
+            "f16c",
+            "fma",
+            "mmx",
+            "movbe",
+            "pclmulqdq",
+            "popcnt",
+            "rdrand",
+            "rdseed",
+            "sse",
+            "sse2",
+            "sse4_1",
+            "sse4_2",
+            "ssse3"
+          ],
+          "generation": 0,
+          "parents": [
+            "haswell"
+          ]
+        }
+      },
+      "compiler": {
+        "name": "gcc",
+        "version": "12.1.0"
+      },
+      "namespace": "builtin",
+      "parameters": {
+        "atomics": false,
+        "cuda": false,
+        "cxx": false,
+        "cxx_exceptions": false,
+        "fabrics": [
+          "none"
+        ],
+        "gpfs": false,
+        "internal-hwloc": false,
+        "java": false,
+        "legacylaunchers": false,
+        "lustre": false,
+        "memchecker": false,
+        "pmi": false,
+        "romio": true,
+        "rsh": true,
+        "schedulers": [
+          "none"
+        ],
+        "singularity": false,
+        "static": true,
+        "vt": true,
+        "wrapper-rpath": true,
+        "cflags": [],
+        "cppflags": [],
+        "cxxflags": [],
+        "fflags": [],
+        "ldflags": [],
+        "ldlibs": []
+      },
+      "external": {
+        "path": "/lfs/software/opt/linux-rocky8-x86_64/gcc-12.1.0/openmpi-4.1.3-d5vdlovcq4fpd6mxzxf4ypveikxclapu",
+        "module": null,
+        "extra_attributes": {}
+      },
+      "hash": "mdmkydw3zqzavfo4yd3yoemjb4u2mvdb"
+    },
+    "xop6htp3jz2grrpm3ocfw4hixxpget5z": {
+      "name": "wrf",
+      "version": "4.3.3",
+      "arch": {
+        "platform": "linux",
+        "platform_os": "rocky8",
+        "target": {
+          "name": "broadwell",
+          "vendor": "GenuineIntel",
+          "features": [
+            "adx",
+            "aes",
+            "avx",
+            "avx2",
+            "bmi1",
+            "bmi2",
+            "f16c",
+            "fma",
+            "mmx",
+            "movbe",
+            "pclmulqdq",
+            "popcnt",
+            "rdrand",
+            "rdseed",
+            "sse",
+            "sse2",
+            "sse4_1",
+            "sse4_2",
+            "ssse3"
+          ],
+          "generation": 0,
+          "parents": [
+            "haswell"
+          ]
+        }
+      },
+      "compiler": {
+        "name": "gcc",
+        "version": "12.1.0"
+      },
+      "namespace": "builtin",
+      "parameters": {
+        "build_type": "dmpar",
+        "compile_type": "em_real",
+        "nesting": "basic",
+        "patches": [
+          "01c0f71a4c742603ca6418977bdc71c8c5ccf882e54e6c193ec2adaf98e31511",
+          "68548f61600d8503bf14a1ab8b90e0e20375fe9466fa1e205b8d835174fcdbef",
+          "b3f063c60c61ac6655f91cbb266e3a0dafc06449ebb701cb56541c5e9bff65e9",
+          "e07c39c644dab0cad373e4ff3809db22128b376c139416d9e774b96e1f86e7e7",
+          "e4971f64f4d7d8c19fa0313d43e575dd3554a2e714d9391bc095b3ad18b35e22",
+          "e6f3db399606f09a582999506d63dc6c52fcb08efe83a3c2931107c8d927858d",
+          "f3dd50d3de8dc26d12ab5bceeaa80ec05a722834dde97107d7bb194c9f67045a",
+          "fa78635a0330f8116f2193c08db7809e5d31dc6b994bab6eec3ce9f2e3aef5b7"
+        ],
+        "pnetcdf": true,
+        "cflags": [],
+        "cppflags": [],
+        "cxxflags": [],
+        "fflags": [],
+        "ldflags": [],
+        "ldlibs": []
+      },
+      "external": {
+        "path": "/lfs/software/opt/linux-rocky8-broadwell/gcc-12.1.0/wrf-4.3.3-j46kfwqhotkaofwfo22wvutiwdvtpg2a",
+        "module": null,
+        "extra_attributes": {}
+      },
+      "patches": [
+        "e6f3db399606f09a582999506d63dc6c52fcb08efe83a3c2931107c8d927858d",
+        "f3dd50d3de8dc26d12ab5bceeaa80ec05a722834dde97107d7bb194c9f67045a",
+        "b3f063c60c61ac6655f91cbb266e3a0dafc06449ebb701cb56541c5e9bff65e9",
+        "e07c39c644dab0cad373e4ff3809db22128b376c139416d9e774b96e1f86e7e7",
+        "68548f61600d8503bf14a1ab8b90e0e20375fe9466fa1e205b8d835174fcdbef",
+        "01c0f71a4c742603ca6418977bdc71c8c5ccf882e54e6c193ec2adaf98e31511",
+        "e4971f64f4d7d8c19fa0313d43e575dd3554a2e714d9391bc095b3ad18b35e22",
+        "fa78635a0330f8116f2193c08db7809e5d31dc6b994bab6eec3ce9f2e3aef5b7"
+      ],
+      "hash": "xop6htp3jz2grrpm3ocfw4hixxpget5z"
+    },
+    "4bv6ixscfpe7igmql4j2hrem5qnqwhee": {
+      "name": "wps",
+      "version": "4.3.1",
+      "arch": {
+        "platform": "linux",
+        "platform_os": "rocky8",
+        "target": {
+          "name": "broadwell",
+          "vendor": "GenuineIntel",
+          "features": [
+            "adx",
+            "aes",
+            "avx",
+            "avx2",
+            "bmi1",
+            "bmi2",
+            "f16c",
+            "fma",
+            "mmx",
+            "movbe",
+            "pclmulqdq",
+            "popcnt",
+            "rdrand",
+            "rdseed",
+            "sse",
+            "sse2",
+            "sse4_1",
+            "sse4_2",
+            "ssse3"
+          ],
+          "generation": 0,
+          "parents": [
+            "haswell"
+          ]
+        }
+      },
+      "compiler": {
+        "name": "intel",
+        "version": "2021.4.0"
+      },
+      "namespace": "builtin",
+      "parameters": {
+        "build_type": "serial",
+        "patches": [
+          "3f0d9999f2ab438b4625f46c95b84998167ca8652f692b09f8fc427324f166e5",
+          "62c1bcc48dca8b48f2b766bf08a4f787452e3431b03d49efd34ca62338c2d190",
+          "e208f471eb7d66db130dbfe1d97d76fdef129a8f3189c17f3c93266dea0a80a5",
+          "e86d02971a36bfb79d39f5b25af246e3ca6c9990c4ee4175b558889621cb7af1"
+        ],
+        "cflags": [],
+        "cppflags": [],
+        "cxxflags": [],
+        "fflags": [],
+        "ldflags": [],
+        "ldlibs": []
+      },
+      "patches": [
+        "62c1bcc48dca8b48f2b766bf08a4f787452e3431b03d49efd34ca62338c2d190",
+        "3f0d9999f2ab438b4625f46c95b84998167ca8652f692b09f8fc427324f166e5",
+        "e86d02971a36bfb79d39f5b25af246e3ca6c9990c4ee4175b558889621cb7af1",
+        "e208f471eb7d66db130dbfe1d97d76fdef129a8f3189c17f3c93266dea0a80a5"
+      ],
+      "dependencies": [
+        {
+          "name": "jasper",
+          "hash": "xadohtmjxmteyfjq3do7xavhf3q74wpe",
+          "type": [
+            "build",
+            "link"
+          ]
+        },
+        {
+          "name": "libtool",
+          "hash": "fqw2cru7fac7pq3sy4gqdwuff54g5nn3",
+          "type": [
+            "build"
+          ]
+        },
+        {
+          "name": "m4",
+          "hash": "rafopofhbkpemwq4uam7nslsodfb2jdt",
+          "type": [
+            "build"
+          ]
+        },
+        {
+          "name": "netcdf-c",
+          "hash": "mt4kcfjilkgxns7gp7qrtuzutx7bvqsf",
+          "type": [
+            "build",
+            "link"
+          ]
+        },
+        {
+          "name": "netcdf-fortran",
+          "hash": "kesnuauig3j3u2kcqwzivi24qemuiqep",
+          "type": [
+            "build",
+            "link"
+          ]
+        },
+        {
+          "name": "openmpi",
+          "hash": "dey3qdeojzz3mn4vegkahw47oqcwwmea",
+          "type": [
+            "build",
+            "link"
+          ]
+        },
+        {
+          "name": "tcsh",
+          "hash": "tazx6itv25suxhbz6y7o2e7xudjotkzr",
+          "type": [
+            "build"
+          ]
+        },
+        {
+          "name": "time",
+          "hash": "cgq2gfvloz25mmmkcmgyl5s4yrbwiceu",
+          "type": [
+            "build"
+          ]
+        },
+        {
+          "name": "wrf",
+          "hash": "sev3h44kqb2rpxg2a3t66vkbrpovewsc",
+          "type": [
+            "build",
+            "link"
+          ]
+        }
+      ],
+      "hash": "4bv6ixscfpe7igmql4j2hrem5qnqwhee"
+    },
+    "dey3qdeojzz3mn4vegkahw47oqcwwmea": {
+      "name": "openmpi",
+      "version": "4.1.3",
+      "arch": {
+        "platform": "linux",
+        "platform_os": "rocky8",
+        "target": {
+          "name": "broadwell",
+          "vendor": "GenuineIntel",
+          "features": [
+            "adx",
+            "aes",
+            "avx",
+            "avx2",
+            "bmi1",
+            "bmi2",
+            "f16c",
+            "fma",
+            "mmx",
+            "movbe",
+            "pclmulqdq",
+            "popcnt",
+            "rdrand",
+            "rdseed",
+            "sse",
+            "sse2",
+            "sse4_1",
+            "sse4_2",
+            "ssse3"
+          ],
+          "generation": 0,
+          "parents": [
+            "haswell"
+          ]
+        }
+      },
+      "compiler": {
+        "name": "intel",
+        "version": "2021.4.0"
+      },
+      "namespace": "builtin",
+      "parameters": {
+        "atomics": false,
+        "cuda": false,
+        "cxx": false,
+        "cxx_exceptions": false,
+        "fabrics": [
+          "none"
+        ],
+        "gpfs": false,
+        "internal-hwloc": false,
+        "java": false,
+        "legacylaunchers": false,
+        "lustre": false,
+        "memchecker": false,
+        "pmi": false,
+        "romio": true,
+        "rsh": true,
+        "schedulers": [
+          "none"
+        ],
+        "singularity": false,
+        "static": true,
+        "vt": true,
+        "wrapper-rpath": true,
+        "cflags": [],
+        "cppflags": [],
+        "cxxflags": [],
+        "fflags": [],
+        "ldflags": [],
+        "ldlibs": []
+      },
+      "external": {
+        "path": "/lfs/software/opt/linux-rocky8-x86_64/intel-2021.4.0/openmpi-4.1.3-x2ww2l3tev6e5acwnqabzpemomvruqmq",
+        "module": null,
+        "extra_attributes": {}
+      },
+      "hash": "dey3qdeojzz3mn4vegkahw47oqcwwmea"
+    },
+    "sev3h44kqb2rpxg2a3t66vkbrpovewsc": {
+      "name": "wrf",
+      "version": "4.3.3",
+      "arch": {
+        "platform": "linux",
+        "platform_os": "rocky8",
+        "target": {
+          "name": "broadwell",
+          "vendor": "GenuineIntel",
+          "features": [
+            "adx",
+            "aes",
+            "avx",
+            "avx2",
+            "bmi1",
+            "bmi2",
+            "f16c",
+            "fma",
+            "mmx",
+            "movbe",
+            "pclmulqdq",
+            "popcnt",
+            "rdrand",
+            "rdseed",
+            "sse",
+            "sse2",
+            "sse4_1",
+            "sse4_2",
+            "ssse3"
+          ],
+          "generation": 0,
+          "parents": [
+            "haswell"
+          ]
+        }
+      },
+      "compiler": {
+        "name": "intel",
+        "version": "2021.4.0"
+      },
+      "namespace": "builtin",
+      "parameters": {
+        "build_type": "dmpar",
+        "compile_type": "em_real",
+        "nesting": "basic",
+        "patches": [
+          "01c0f71a4c742603ca6418977bdc71c8c5ccf882e54e6c193ec2adaf98e31511",
+          "68548f61600d8503bf14a1ab8b90e0e20375fe9466fa1e205b8d835174fcdbef",
+          "b3f063c60c61ac6655f91cbb266e3a0dafc06449ebb701cb56541c5e9bff65e9",
+          "e07c39c644dab0cad373e4ff3809db22128b376c139416d9e774b96e1f86e7e7",
+          "e4971f64f4d7d8c19fa0313d43e575dd3554a2e714d9391bc095b3ad18b35e22",
+          "e6f3db399606f09a582999506d63dc6c52fcb08efe83a3c2931107c8d927858d",
+          "f3dd50d3de8dc26d12ab5bceeaa80ec05a722834dde97107d7bb194c9f67045a",
+          "fa78635a0330f8116f2193c08db7809e5d31dc6b994bab6eec3ce9f2e3aef5b7"
+        ],
+        "pnetcdf": true,
+        "cflags": [],
+        "cppflags": [],
+        "cxxflags": [],
+        "fflags": [],
+        "ldflags": [],
+        "ldlibs": []
+      },
+      "external": {
+        "path": "/lfs/software/opt/linux-rocky8-broadwell/intel-2021.4.0/wrf-4.3.3-hayhylqjltomkrhsknzdzxvx3hrimyll",
+        "module": null,
+        "extra_attributes": {}
+      },
+      "patches": [
+        "e6f3db399606f09a582999506d63dc6c52fcb08efe83a3c2931107c8d927858d",
+        "f3dd50d3de8dc26d12ab5bceeaa80ec05a722834dde97107d7bb194c9f67045a",
+        "b3f063c60c61ac6655f91cbb266e3a0dafc06449ebb701cb56541c5e9bff65e9",
+        "e07c39c644dab0cad373e4ff3809db22128b376c139416d9e774b96e1f86e7e7",
+        "68548f61600d8503bf14a1ab8b90e0e20375fe9466fa1e205b8d835174fcdbef",
+        "01c0f71a4c742603ca6418977bdc71c8c5ccf882e54e6c193ec2adaf98e31511",
+        "e4971f64f4d7d8c19fa0313d43e575dd3554a2e714d9391bc095b3ad18b35e22",
+        "fa78635a0330f8116f2193c08db7809e5d31dc6b994bab6eec3ce9f2e3aef5b7"
+      ],
+      "hash": "sev3h44kqb2rpxg2a3t66vkbrpovewsc"
+    }
+  }
+}

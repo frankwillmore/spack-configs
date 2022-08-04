@@ -10,8 +10,8 @@ spack:
 
   view: false
   'config:':
-    concretizer: original
-#    concretizer: clingo
+#    concretizer: original
+    concretizer: clingo
     install_tree:
       root: /lfs/software/opt
       padded_length: 0
@@ -47,8 +47,10 @@ spack:
   modules::
     default:
       roots:
-        lmod: /lfs/software/modules
-        tcl: /tmp
+# Do NOT enable this, it will stomp all over all the modifications
+#        lmod: /lfs/software/modules
+        lmod: /tmp/lmod
+        tcl: /tmp/modules
       arch_folder: false
       enable:
       - lmod
@@ -61,6 +63,16 @@ spack:
         blacklist_implicits: true
         hierarchy:
         - mpi
+      # Generate the tcl mods because they have useful information
+      # used to build the LMOD modules by hand
+      tcl:
+        hash_length: 0
+        all:
+          suffixes:
+            ^mpich: 'mpich'
+            ^openmpi: 'openmpi'
+        blacklist_implicits: true
 
   mirrors:
     falcon: file:///lfs/software/falcon-mirror
+
