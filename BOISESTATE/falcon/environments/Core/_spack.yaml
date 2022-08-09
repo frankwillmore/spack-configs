@@ -7,15 +7,13 @@ spack:
   'config:':
     concretizer: clingo
     install_tree:
-# These for install
+    # These for install
       root: /lfs/software/opt
       padded_length: 0
-# These for build, because of lustre
+#    # These for build, because of lustre
 #      root: /software/opt
 #      padded_length: 128
     build_stage: $tempdir/user/spack-stage
-
-#  packages:
 
   specs:
 
@@ -36,10 +34,6 @@ spack:
       - lmod
       lmod:
         hash_length: 0
-#        whitelist:
-#        - gcc
-#        - intel
-#        - oneapi
         blacklist_implicits: true
         core_compilers:
         - gcc@8.5.0
