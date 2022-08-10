@@ -2,6 +2,7 @@ spack:
 
   include:
   - ../../includes/system_packages.yaml
+  - ../../includes/compilers.yaml
 
   view: false
   'config:':
@@ -10,7 +11,7 @@ spack:
     # These for install
       root: /lfs/software/opt
       padded_length: 0
-#    # These for build, because of lustre
+    # These for build, because of lustre
 #      root: /software/opt
 #      padded_length: 128
     build_stage: $tempdir/user/spack-stage
@@ -28,8 +29,9 @@ spack:
 
   modules::
     default:
+      arch_folder: false
       roots:
-        lmod: /lfs/software/modules
+        lmod: /tmp/modules
       enable:
       - lmod
       lmod:
@@ -41,7 +43,6 @@ spack:
         core_specs:
         - cmake 
         - tmux
-    arch_folder: false
 
   mirrors:
     falcon-mirror: file:///lfs/software/falcon-mirror

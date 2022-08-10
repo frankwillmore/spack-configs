@@ -47,7 +47,6 @@ spack:
   modules::
     default:
       roots:
-#        lmod: /lfs/software/modules
         lmod: /tmp/lmod
         tcl: /tmp/modules
       arch_folder: false

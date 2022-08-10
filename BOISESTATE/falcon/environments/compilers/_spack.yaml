@@ -1,10 +1,8 @@
 spack:
   view: false
-#  concretization: together
   concretizer:
     unify: true
   config::
-#    concretizer:: original
     install_tree:
       root: /lfs/software/opt
       padded_length: 0

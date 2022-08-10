@@ -1,5 +1,13 @@
 packages:
 
+  cmake:
+    version:
+    - 3.23.1
+    externals:
+    - spec: cmake@3.23.1
+      prefix: /lfs/software/opt/linux-rocky8-x86_64/gcc-8.5.0/cmake-3.23.1-t4jf4iwyd76b6wm7jpe747qkwoyewirl
+    buildable: False
+
   gsl:
     version:
     - 2.7.1

@@ -23,8 +23,7 @@
       operating_system: rocky8
       target: x86_64
       modules: []
-#      environment: {}
-# need to add this path so packages can find the fpp pre-processor
+      # need to add this path so packages can find the fpp pre-processor
       environment:
         prepend_path: 
           PATH: /lfs/software/opt/linux-rocky8-x86_64/gcc-8.5.0/intel-oneapi-compilers-2021.4.0-j6dai6emcj3m6t2fhurodakwrtt3q3qb/compiler/2021.4.0/linux/bin/intel64
