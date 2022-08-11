@@ -8,36 +8,20 @@ spack:
   'config:':
     concretizer: clingo
     install_tree:
-#      root: /lfs/software/opt
-#      padded_length: 0
-      root: /software/opt
-      padded_length: 128
+      root: /lfs/software/opt
+      padded_length: 0
+#      root: /software/opt
+#      padded_length: 128
     build_stage: $tempdir/user/spack-stage
-
-  packages:
-
-    cmake:
-      version: 
-      - 3.23.1
-      externals:
-      - spec: cmake@3.23.1
-        prefix: /usr
-        buildable: false
-
-    slurm:
-      version:
-      - 21.08.8-2
-      externals:
-      - spec: slurm@21.08.8-2
-        prefix: /usr
-        buildable: false
 
   specs:
 
   - matrix:
-    - - 'vacuumms@multi-def~cuda+tiff'
+    - - 'vacuumms@master~cuda+tiff'
+      - 'vacuumms@1.1.2~cuda+tiff'
     - - '%gcc@12.1.0'
       - '%intel'
+#      - '%oneapi'
     - - ^libtiff@3.9.7
     - - target=x86_64
 
@@ -47,8 +31,8 @@ spack:
   modules::
     default:
       roots:
-        lmod: /lfs/software/modules
-        tcl: /tmp
+        lmod: /tmp/lmod
+        tcl: /tmp/modules
       arch_folder: false
       enable:
       - lmod
@@ -58,15 +42,7 @@ spack:
         whitelist:
         - gcc
         - intel
-#        - oneapi
-#        blacklist:
-#        - gcc@8.5.0
         blacklist_implicits: true
-#        core_compilers:
-#        - gcc@8.5.0
-#        # Core specs appear in the TLD and are built with the core compiler
-#        core_specs:
-#        - gcc@12.1.0
-#        - intel-oneapi-compilers@2021.4.0
-        hierarchy:
-        - mpi
+
+  mirrors:
+    falcon: file:///lfs/software/falcon-mirror
